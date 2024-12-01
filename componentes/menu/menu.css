@@ -1,6 +1,176 @@
 .menuContent{ /*contenedor del menu*/
-    background-color: #001e17;
+    background-color: #12182c;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
+
+/*estilos del logo*/
+.menuContent__logo{ /*contenedor del logo*/
+    width: 45px;
+    height: 45px;
+}
+.menuContent__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/*estilos del icono de menu*/
+.menuContent__icon{/*contenedor de icono de menu*/
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #125c70;
+    font-size: 1.8em;
+}
+
+
+.menuContent__nav{ /*contenedor de la navegacion para moviles*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: #12182c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 480px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition-duration: .3s;
+    transform: translate(-100%,0);
+}
+.menuContent__navShow{
+    transition-duration: .3s;
+    transform: translate(0,0);
+}
+
+.menuContent__nav--ul{ /*contenedor de los links*/
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.menuContent__nav--ul a{ /*links*/
+    display: block;
+    text-decoration: none;
+    color: #125c70;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 8px;
+}
+.menuContent__nav--ul a:hover{
+    background-color: #125c70;
+    color: #12182c;
+}
+
+
+.menuContent__oscurecer{ /*oscurecer*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000062;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .3s;
+}
+.menuContent__oscurecerShow{
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+}
+
+
+/*boton para cerrar el menu*/
+.menuContent__nav--close{ /*boton para cerrar*/
+    background-color: transparent;
+    position: absolute;
+    color: #125c70;
+    font-size: 1.8em;
+    border: none;
+    right: 8px;
+    top: 8px;
+}
+
+
+.menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+.menuContent__nav--data a{ /*links de los datos*/
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #125c70;
+    padding: 8px;
+    background-color: #122c42;
+    border-radius: 1000px;
+}
+.menuContent__nav--data a:hover{
+    background-color: #125c70;
+    color: #122c42;
+}
+
+@media(min-width: 850px){
+    .menuContent__logo{ /*contenedor del logo*/
+        order: 1;
+    }
+    .menuContent__icon{/*contenedor de icono de menu*/
+        display: none;
+    }
+    .menuContent__nav{ /*contenedor de la navegacion para moviles*/
+        order: 2;
+        position: relative;
+        height: auto;
+        width: auto;
+        padding: 0;
+        min-height: auto;
+        background-color: transparent;
+        transform: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+    .menuContent__nav--ul{ /*contenedor de los links*/
+        flex-direction: row;
+        gap: 25px;
+    }
+    .menuContent__nav--ul a{ /*links*/
+        padding: 0;
+        width: 80px;
+        font-size: 1.3em;
+        text-align: end;
+    }
+    .menuContent__nav--ul a:hover{ /*links*/
+        background-color: transparent;
+        color: #12435b;
+    }
+
+    /*boton para cerrar el menu*/
+    .menuContent__nav--close{/*boton para cerrar*/
+        display: none;
+    }
+    .menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
+        gap: 5px;
+    }
+    .menuContent__nav--data a{ /*links de los datos*/
+        font-size: 1em;
+        padding: 8px;
+    }
+}
