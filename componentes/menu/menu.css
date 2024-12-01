@@ -130,7 +130,7 @@
 }
 .menuContent__nav--data a{ /*links de los datos*/
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #125c70;
     padding: 8px;
     width: 160px;
