@@ -39,9 +39,12 @@ function Menu() {
             ></div>
 
             <div className={`menuContent__nav ${!showMenu ? "":"menuContent__navShow"}`}>
-                <button onClick={()=>showHideMenu("h")} className="menuContent__nav--close">
+                <div className="menuContent__nav--close">
+                    <Image src={logo} alt="logo" />
+                    <button onClick={()=>showHideMenu("h")}>
                     <FontAwesomeIcon icon={faXmark} />
                 </button>
+                </div>
                 <ul className="menuContent__nav--ul">
                     <li>
                         <Link onClick={()=>showHideMenu("h")} href={"/"}>Inicio</Link>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 65px;
+    height: 50px;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -23,8 +23,8 @@
 /*estilos del icono de menu*/
 .menuContent__icon{/*contenedor de icono de menu*/
     background-color: transparent;
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     border: none;
     display: flex;
@@ -67,7 +67,7 @@
     display: block;
     text-decoration: none;
     color: #125c70;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 100%;
     padding: 8px;
 }
@@ -97,15 +97,28 @@
 
 /*boton para cerrar el menu*/
 .menuContent__nav--close{ /*boton para cerrar*/
-    background-color: transparent;
     position: absolute;
+    width: 100%;
     color: #125c70;
     font-size: 1.8em;
-    border: none;
-    right: 8px;
+    left: 0;
     top: 8px;
+    display: flex;
+    justify-content: space-around;
 }
-
+.menuContent__nav--close img{
+    width: 35px;
+    height: 35px;
+}
+.menuContent__nav--close button{
+    background-color: transparent;
+    border: none;
+    color: #125c70;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
     display: flex;
@@ -113,12 +126,17 @@
     align-items: center;
     width: 100%;
     gap: 25px;
+    flex-wrap: wrap;
 }
 .menuContent__nav--data a{ /*links de los datos*/
     text-decoration: none;
     font-size: 1.5em;
     color: #125c70;
     padding: 8px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #122c42;
     border-radius: 1000px;
 }
@@ -126,6 +144,7 @@
     background-color: #125c70;
     color: #122c42;
 }
+
 
 @media(min-width: 850px){
     .menuContent__logo{ /*contenedor del logo*/
@@ -172,5 +191,6 @@
     .menuContent__nav--data a{ /*links de los datos*/
         font-size: 1em;
         padding: 8px;
+        width: 114px;
     }
 }
