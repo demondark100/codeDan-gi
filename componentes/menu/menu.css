@@ -1,0 +1,6 @@
+.menuContent{ /*contenedor del menu*/
+    background-color: #001e17;
+    display: flex;
+    justify-content: space-around;
+}
+

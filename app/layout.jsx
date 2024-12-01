@@ -1,4 +1,5 @@
-import Menu from "@/componentes/menu/menu"
+import Menu from "@/componentes/menu/menu";
+import "../app/globals.css";
 
 export const metadata = {
   title: 'Next.js',
@@ -15,3 +16,9 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
+
+// mi pagina aqui
+// https://code-dan.vercel.app/
+
+// paleta de colores "https://paletadecolores.com.mx/paleta/5a867d/436c64/2d524a/163831/001e17/"

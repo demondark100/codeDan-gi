@@ -1,9 +1,12 @@
+import "../menu/menu.css";
 import Link from "next/link";
 
 function Menu() {
     return (  
-        <nav>
-            <h2>ApuntesDan</h2>
+        <nav className="menuContent">
+            <div>
+                
+            </div>
             <ul>
                 <li>
                     <Link href={"/"}>Inicio</Link>
