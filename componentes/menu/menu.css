@@ -44,15 +44,21 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    min-height: 480px;
     padding-top: 50px;
     transition-duration: .3s;
     transform: translate(-100%,0);
     user-select: none;
+    overflow: auto;
 }
 .menuContent__navShow{
     transition-duration: .3s;
     transform: translate(0,0);
+}
+.menuContent__nav::-webkit-scrollbar{ /*contenedor del scroll*/
+    background: linear-gradient(0deg,#125c70,transparent,#125c70);
+}
+.menuContent__nav::-webkit-scrollbar-thumb{
+    background-color: #120b17;
 }
 
 .menuContent__nav--ul{ /*contenedor de los links*/
@@ -190,6 +196,7 @@
         flex-direction: row;
         align-items: center;
         gap: 25px;
+        overflow: visible;
     }
     .menuContent__nav--ul{ /*contenedor de los links*/
         flex-direction: row;
