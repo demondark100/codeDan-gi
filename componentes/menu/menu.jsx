@@ -78,8 +78,8 @@ function Menu() {
                     </button>
 
                     <div className={`menuContent__nav--data ${!showProfile ? "":"menuContent__nav--dataShow"}`}>
-                        <Link href={""}>Registrarse</Link>
-                        <Link href={""}>Iniciar secion</Link>
+                        <Link href={"registrarse"}>Registrarse</Link>
+                        <Link href={"login"}>Iniciar secion</Link>
                     </div>
                 </div>
 
