@@ -31,7 +31,6 @@
     justify-content: center;
     align-items: center;
     color: #125c70;
-    font-size: 1.8em;
 }
 
 
@@ -44,12 +43,12 @@
     background-color: #12182c;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 25px;
     min-height: 480px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
     transition-duration: .3s;
     transform: translate(-100%,0);
+    user-select: none;
 }
 .menuContent__navShow{
     transition-duration: .3s;
@@ -100,7 +99,6 @@
     position: absolute;
     width: 100%;
     color: #125c70;
-    font-size: 1.8em;
     left: 0;
     top: 8px;
     display: flex;
@@ -120,29 +118,56 @@
     justify-content: center;
 }
 
-.menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
+
+/*estilos del inicio de sesion y de registro*/
+.menuContent__nav--user{ /*contenedor de usuario y opciones*/
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #120b17;
+    padding: 8px;
+    position: relative;
+}
+.menuContent__nav--user img{ /*imagen de usuario*/
+    width: 35px;
+    height: 35px;
+    border-radius: 1000px;
+    pointer-events: none;
+}
+.menuContent__nav--user button{ /*boton de opciones*/
+    background-color: transparent;
+    color: #125c70;
+    font-size: 1.3em;
+    border: none;
+}
+
+.menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
+    position: absolute;
+    top: 100%;
+    display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 25px;
     flex-wrap: wrap;
+}
+.menuContent__nav--dataShow{
+    display: flex;
 }
 .menuContent__nav--data a{ /*links de los datos*/
     text-decoration: none;
     font-size: 1em;
     color: #125c70;
-    padding: 8px;
-    width: 160px;
+    padding: 15px;
+    padding-left: 8px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-color: #122c42;
-    border-radius: 1000px;
+    background-color: #120b17;
 }
 .menuContent__nav--data a:hover{
-    background-color: #125c70;
-    color: #122c42;
+    background-color: #12182c;
 }
 
 
@@ -180,17 +205,41 @@
         background-color: transparent;
         color: #12435b;
     }
-
+    .menuContent__oscurecer{ /*oscurecer*/
+        opacity: 0;
+        visibility: hidden;
+    }
     /*boton para cerrar el menu*/
     .menuContent__nav--close{/*boton para cerrar*/
         display: none;
     }
+
+    /*estilos para el inicio de sesion o registro*/
+    .menuContent__nav--user{ /*contenedor de usuario y opciones*/
+        width: auto;
+        height: auto;
+        gap: 18px;
+        background-color: transparent;
+        align-items: center;
+    }
+    .menuContent__nav--user button{ /*boton de opciones*/
+        cursor: pointer;
+        color: #125c70;
+    }
+    .menuContent__nav--user img{ /*imagen de usuario*/
+        width: 25px;
+        height: 25px;
+    }
     .menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
-        gap: 5px;
+        width: auto;
     }
     .menuContent__nav--data a{ /*links de los datos*/
         font-size: 1em;
         padding: 8px;
         width: 114px;
+        background-color: #12182c;
+    }
+    .menuContent__nav--data a:hover{
+        background-color: #120b17;
     }
 }
