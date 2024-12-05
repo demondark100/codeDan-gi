@@ -1,0 +1,103 @@
+.contentRegister{ /*contenedor principal*/
+    height: 100%;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*contenedor del formulario*/
+.contentRegister__form{ /*contenedor del formulario*/
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: #12182c;
+}
+/*fin de los estilos del contenedor de formulario*/
+
+/*estilos del titulo del formulario*/
+.contentRegister__form--h1{
+    color: #125c70;
+    text-align: center;
+}
+/*fin de los estilos del titulo del formulario*/
+
+/*estilos del contenedor de todos los inputs*/
+.contentRegister__form--contentInput{ /*contnedor de cada input*/
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-bottom: .8px solid #125c70;
+    border-left: .8px solid #125c70;
+    border-radius: 4px;
+    gap: 4px;
+}
+.contentRegister__form--contentInput__input{ /*input*/
+    padding-top: 28px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #125c70;
+    font-size: 1.2em;
+}
+/*fin de los estilos de inputs*/
+
+/*estilos del titulo indicatvo para cada input*/
+.contentRegister__form--contentInput__p{ /*titulo*/
+    position: absolute;
+    pointer-events: none;
+    color: #125c70;
+    left: 8px;
+    transform: translate(0,0);
+    font-size: 1.2em;
+    transition-duration: .3s;
+}
+.contentRegister__form--contentInput__p--up{ /*mover el parrafo hacia arriba*/
+    transform: translate(0,-10px);
+    transition-duration: .3s;
+}
+/*fin de los estilos de titulo indicativo*/
+
+/*estilos del boton para borrar inputs*/
+.contentRegister__form--contentInput__btnDel{
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    color: #125c70;
+    font-size: 1.2em;
+}
+/*fun de los estilos para borrar inputs*/
+
+/*estilos del link para ir al login*/
+.contentRegister__form--contentLink{ /*contenedor del link para login*/
+    display: flex;
+    justify-content: center;
+}
+.contentRegister__form--contentLink a{ /*link para irse al login*/
+    color: #125c70;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+/*fin del estilo del link para ir a login*/
+
+
+
+/*estilos del boton para registrarse*/
+.contentRegister__form--btnRegister{
+    padding: 15px;
+    background-color: #125c70;
+    border-radius: 8px;
+    color: #120b17;
+    font-size: 1.2em;
+    border: none;
+}
+/*fin de klos estilos para el boton de registrarse*/
