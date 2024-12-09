@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    min-height: 500px;
 }
 
 /*contenedor del formulario*/
@@ -16,24 +16,31 @@
     padding: 15px;
     width: 80%;
     border-radius: 8px;
-    background-color: #12182c;
+    background-color: #1E1E1E;
 }
 /*fin de los estilos del contenedor de formulario*/
 
 /*estilos del titulo del formulario*/
 .contentRegister__form--h1{
-    color: #125c70;
+    color: #E0E0E0;
     text-align: center;
 }
 /*fin de los estilos del titulo del formulario*/
+
+/*estilos del icono de cada campo*/
+.iconRegistenForm{
+    position: absolute;
+    left: 8px;
+    color: #E0E0E0;
+}
+/*fin de los estilos del icono de cada campo*/
 
 /*estilos del contenedor de todos los inputs*/
 .contentRegister__form--contentInput{ /*contnedor de cada input*/
     display: flex;
     position: relative;
     align-items: center;
-    border-bottom: .8px solid #125c70;
-    border-left: .8px solid #125c70;
+    border: .8px solid #2C2C2C;
     border-radius: 4px;
     gap: 4px;
 }
@@ -41,22 +48,31 @@
     padding-top: 28px;
     padding-bottom: 2px;
     padding-right: 8px;
-    padding-left: 8px;
+    padding-left: 35px;
     width: 100%;
     background-color: transparent;
     border: none;
     outline: none;
-    color: #125c70;
+    color: #E0E0E0;
     font-size: 1.2em;
 }
 /*fin de los estilos de inputs*/
+
+/*estilos de los errores*/
+.contentRegister__form--contentInputErr{
+    color: #E53935;
+    font-size: 1.2em;
+    margin-top: 8px;
+}
+/*fin de los estilos de errores*/
+
 
 /*estilos del titulo indicatvo para cada input*/
 .contentRegister__form--contentInput__p{ /*titulo*/
     position: absolute;
     pointer-events: none;
-    color: #125c70;
-    left: 8px;
+    color: #E0E0E0;
+    left: 35px;
     transform: translate(0,0);
     font-size: 1.2em;
     transition-duration: .3s;
@@ -72,7 +88,7 @@
     background-color: transparent;
     padding: 8px;
     border: none;
-    color: #125c70;
+    color: #E0E0E0;
     font-size: 1.2em;
 }
 /*fun de los estilos para borrar inputs*/
@@ -83,7 +99,7 @@
     justify-content: center;
 }
 .contentRegister__form--contentLink a{ /*link para irse al login*/
-    color: #125c70;
+    color: #4A90E2;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -94,10 +110,31 @@
 /*estilos del boton para registrarse*/
 .contentRegister__form--btnRegister{
     padding: 15px;
-    background-color: #125c70;
+    background-color: #3A3A3A;
     border-radius: 8px;
-    color: #120b17;
+    color: #E0E0E0;
     font-size: 1.2em;
     border: none;
+    transition-duration: .3s;
+}
+.contentRegister__form--btnRegister:hover{
+    background-color: #505050;
+    transition-duration: .3s;
 }
 /*fin de klos estilos para el boton de registrarse*/
+
+
+
+@media(min-width: 850px){
+    /*contenedor del formulario*/
+    .contentRegister__form{ /*contenedor del formulario*/
+        width: 450px;
+    }
+    /*fin de los estilos del contenedor de formulario*/
+
+    /*estilos del boton para borrar inputs*/
+    .contentRegister__form--contentInput__btnDel{
+        cursor: pointer;
+    }
+    /*fun de los estilos para borrar inputs*/
+}
