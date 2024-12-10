@@ -63,6 +63,7 @@
     color: #E53935;
     font-size: 1.2em;
     margin-top: 8px;
+    text-align: center;
 }
 /*fin de los estilos de errores*/
 
@@ -108,7 +109,7 @@
 
 
 /*estilos del boton para registrarse*/
-.contentRegister__form--btnRegister{
+.contentRegister__form--btnRegister{ /*boton para registrarse*/
     padding: 15px;
     background-color: #3A3A3A;
     border-radius: 8px;
@@ -117,7 +118,7 @@
     border: none;
     transition-duration: .3s;
 }
-.contentRegister__form--btnRegister:hover{
+.contentRegister__form--btnRegister:hover{ /*hover del boton para registrarse*/
     background-color: #505050;
     transition-duration: .3s;
 }
@@ -137,4 +138,10 @@
         cursor: pointer;
     }
     /*fun de los estilos para borrar inputs*/
+
+    /*estilos del boton para registrarse*/
+    .contentRegister__form--btnRegister{ /*boton para registrarse*/
+        cursor: pointer;
+    }
+    /*fin de klos estilos para el boton de registrarse*/
 }
