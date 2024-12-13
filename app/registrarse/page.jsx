@@ -15,7 +15,6 @@ export default function Registrarse() {
     const [btnClose, setBtnClose] = useState([false, false]); // botones para eliminar el contenido de algun campo.
     const [btnEye, setBtnEye] = useState([false,false]); // boton para mostrar o ocultar la contraseña
     const [btnPasswordIcon, setBtnPasswordIcon] = useState([false,false]); // iconos del boton de password.
-    const inputsPassword = useRef([]); // inputs de contraseña.
     const labelsRef = useRef([]); // Referencias de los textos indicativos.
     const [showErr, setShowErr] = useState(false); // mostrar o ocultar error.
     const [msgError, setMsgError] = useState("asd"); // mensajes de error.
@@ -35,12 +34,6 @@ export default function Registrarse() {
             return updated;
         });
 
-        setBtnEye((prev) => {
-            const update = [...prev];
-            update[index] = value !== "";
-            return update;
-        })
-
 
     }
 
@@ -50,18 +43,6 @@ export default function Registrarse() {
         manejarInputs(index, "");
     }
 
-    // botones para mostrar o ocultar contraseña
-    function showHidePassword(e, index) {
-        e.preventDefault();
-        e.stopPropagation();
-        const inputsPasswords = document.querySelectorAll(".contentRegister__form--contentInput__input");
-        setBtnPasswordIcon((prev) => {
-            const update = [...prev];
-            update[index] = !update[index];
-            return update;
-        });
-        inputsPasswords[index].value = "text";
-    }
 
     function sendData(e) {
         e.preventDefault();
@@ -121,7 +102,7 @@ export default function Registrarse() {
                         />
                         {/* renderizar botones para borrar todo el contenido de un campo */}
                         {
-                            field.type != "password" && btnClose[index] && (
+                            btnClose[index] && (
                                 <button
                                     className="contentRegister__form--contentInput__btnDel"
                                     onClick={(e) => delInput(e, index)}
@@ -130,25 +111,6 @@ export default function Registrarse() {
                                 </button>
                             )
                         }
-
-                        {/* renderizar botones para mostrar o ocultar contraseña-
-                         */}
-                        {
-                            field.type == "password" && btnEye[index] && (
-                                <button 
-                                    className="contentRegister__form--contentInput__btnDel"
-                                    onClick={(e)=> showHidePassword(e, index)}
-                                >
-                                    {
-                                        btnPasswordIcon[index] ? 
-                                            <FontAwesomeIcon icon={faEye}/>:
-                                            <FontAwesomeIcon icon={faEyeLowVision}/>
-                                    }
-                                </button>
-                            )
-                        }
-
-                        
                     </div>
                 ))}
                 {/* mensaje de error */}
