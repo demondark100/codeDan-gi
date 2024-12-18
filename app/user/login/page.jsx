@@ -4,7 +4,7 @@ import "./login.css";
 import { faEnvelope, faEye, faLock, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import React, { useState, useRef } from 'react';
+import React, { useState ,useRef } from 'react';
 
 // función para mostrar u ocultar los botones de los inputs
 function Login() {
@@ -23,6 +23,11 @@ function Login() {
 
     // tipo de input para la contraseña
     const [inputType, setInputType] = useState("password");
+
+
+    // mensajes de error
+    const [showHideMsgError, setShowHideMsgError] = useState(false); // mostrar o ocultar mensajes de error
+    const [msgError, setMsgError] = useState(""); // mensajes de error.
 
     // obtener valores de los inputs
     function manejarInputs(value, index) {
@@ -67,10 +72,18 @@ function Login() {
         e.preventDefault();
         let email = /^[a-zA-Z0-9.]{6,30}@gmail\.com$/;
         if (!email.test(inputsValue[0])) {
-            console.log("El correo no es válido");
+            showMsgErr("El correo no es válido.");
         } else if (inputsValue[1].length < 8) {
-            console.log("La contraseña debe tener al menos 8 caracteres");
+            showMsgErr("La contraseña debe tener al menos 8 caracteres.");
         }
+    }
+
+
+    // funcion  para mostrar o ocultar el mensaje de error.
+    function showMsgErr(msg) {
+        setMsgError(msg);
+        setShowHideMsgError(true);
+        setTimeout(() => setShowHideMsgError(false), 5000);
     }
 
     return (
@@ -125,6 +138,9 @@ function Login() {
                         Contraseña
                     </p>
                 </div>
+
+                {/* mensajes de error */}
+                {showHideMsgError && <p className="contentLoginFormErr">{msgError}</p>}
 
                 <Link className="contentLoginForm__link" href={"/user/registrarse"}>¿Aún no tienes una cuenta?</Link>
 
