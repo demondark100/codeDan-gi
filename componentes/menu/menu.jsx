@@ -11,6 +11,9 @@ import { faBars,faXmark,faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../public/logo.jpg";
 
 
+// imagenes
+import userLogo from "@/public/user.png";
+
 
 
 function Menu() {
@@ -58,17 +61,17 @@ function Menu() {
                         <Link onClick={()=>showHideMenu("h")} href={"/"}>Inicio</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/apuntes"}>Apuntes</Link>
+                        <Link onClick={()=>showHideMenu("h")} href={"/apuntes"}>Catalogo</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/proyectos"}>Proyectos</Link>
+                        <Link onClick={()=>showHideMenu("h")} href={"/proyectos"}>Productos</Link>
                     </li>
                     <li>
                         <Link onClick={()=>showHideMenu("h")} href={"/about"}>Sobre mi</Link>
                     </li>
                 </ul>
                 <div className="menuContent__nav--user">
-                    <img src={"https://muytecnologicos.com/wp-content/uploads/2023/04/Autenticacion-de-usuario.png"} alt="usuario"/>
+                    <Image src={userLogo} alt="usuario"/>
                     <button onClick={()=>showHideProfile()}>
                         {
                             showProfile ? 
