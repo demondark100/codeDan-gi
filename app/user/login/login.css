@@ -1,0 +1,127 @@
+/*estilos del contenedor principal*/
+.contentLogin{ /*contenedor principal*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 480px;
+    color: #E0E0E0;
+    height: calc(100vh - 50px);
+}
+/*fin de los etilos del contenedor principal*/
+
+
+/*estilos del contenedor del formulario*/
+.contentLoginForm{ /*contenedor del formulario*/
+    width: 80%;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+@media(min-width: 750px){
+    .contentLoginForm{
+        width: 450px;
+    }
+}
+/*fin de los estilos del contenedor de formulario*/
+
+/*estilos del contenedor de cada input*/
+.contentLoginForm--contentInputs{ /*contenedor de cada input*/
+    width: 100%;
+    border: .8px solid #2C2C2C;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.contentLoginForm--contentInputs input{ /*estilos del cada input*/
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 1.2em;
+    color: #E0E0E0;
+}
+.contentLoginForm--contentInputs button{ /*botones de input*/
+    position: absolute;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #E0E0E0;
+    font-size: 1.2em;
+}
+.contentLoginForm--contentInputs span{ /*iconos de los inputs*/
+    position: absolute;
+    left: 8px;
+}
+@media(min-width: 750px){
+    .contentLoginForm--contentInputs button{ /*botones de input*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos del contenedor de cada input*/
+
+
+/*estilos del placeholder*/
+.contentLoginForm--contentInputs--text{ /*texto que hara de placeholder*/ 
+    position: absolute;
+    left: 35px;
+    font-size: 1.2em;
+    transform: translate(0,0);
+    transition-duration: .3s;
+    pointer-events: none;
+}
+.contentLoginForm--contentInputs--text--up{ /*subir placeholder*/
+    transform: translate(0,-12px);
+    transition-duration: .3s;
+}
+/*fin de los estilos del placeholder*/
+
+
+/*estilos del link para registrarse*/
+.contentLoginForm__link{
+    color: #4A90E2;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+/*fin de los estilos para registrarse*/
+
+
+/*estilos del boton para enviar los datos*/
+.contentLoginForm__btnSend{/* boton*/
+    width: 100%;
+    padding: 15px;
+    background-color: #3A3A3A;
+    border: none;
+    outline: none;
+    color: #E0E0E0;
+    font-size: 1.2em;
+    transition-duration: .3s;
+}
+.contentLoginForm__btnSend:hover{
+    background-color: #505050;
+    color: #fff;
+    transition-duration: .3s;
+}
+@media(min-width: 750px){
+    .contentLoginForm__btnSend{/* boton*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos del boton para enviar los datos*/
+
+
+
+/*estilos de los iconos indicadores*/
+.iconLoginForm{
+    font-size: 1.2em;
+}
+/*fin de los estilos de los iconos indicadores*/
