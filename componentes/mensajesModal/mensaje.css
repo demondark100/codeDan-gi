@@ -1,0 +1,80 @@
+/*estilos del contenedor principal*/
+.mensajeModalContent{ /*contenedor principal*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000d1;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .3s;
+}
+.mensajeModalContentShow{ /*mostrar contenedor*/
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3;
+}
+/*fin de los estilos del contenedor principal*/
+
+
+/*estilos del mensaje de la informacion*/
+.mensajeModalContent__info{ /*contenedor del mensaje de informacion*/
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.mensajeModalContent__info p{  /*mensaje*/
+    font-size: 1.4em;
+    color: #E0E0E0;
+    white-space: pre-wrap;
+    overflow: auto;
+    max-height: 250px;
+}
+.mensajeModalContent__info p::-webkit-scrollbar{ /*contenedor del scroll*/
+    background: linear-gradient(0deg,transparent,#1E1E1E,transparent);
+    outline: .5px solid #3A3A3A;
+    width: 20px;
+    border-radius: 1000px;
+}
+.mensajeModalContent__info p::-webkit-scrollbar-thumb{ /*barrita indicadora*/
+    background-color: #121212;
+    outline: .5px solid #3A3A3A;
+    border-radius: 1000px;
+}
+@media(min-width: 750px){
+    .mensajeModalContent__info{ /*contenedor del mensaje de informacion*/
+        width: 400px;
+    }
+}
+/*fin de los estilos del mensaje de la informacion*/
+
+
+/*estilos del boton*/
+.mensajeModalContent__info--btn{ /*contenedor del boton de ok*/
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.mensajeModalContent__info--btn button{  /*boton de ok*/
+    background-color: transparent;
+    color: #E0E0E0;
+    padding: 4px;
+    border: none;
+    outline: none;
+    font-size: 1.4em;
+}
+@media(min-width: 750px){
+    .mensajeModalContent__info--btn button{  /*boton de ok*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos del boton*/
