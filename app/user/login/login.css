@@ -105,6 +105,7 @@
     color: #E0E0E0;
     font-size: 1.2em;
     transition-duration: .3s;
+    border-radius: 8px;
 }
 .contentLoginForm__btnSend:hover{
     background-color: #505050;
@@ -125,3 +126,11 @@
     font-size: 1.2em;
 }
 /*fin de los estilos de los iconos indicadores*/
+
+
+/*estilos del mensaje de error*/
+.contentLoginFormErr{  /*parrafo*/
+    color: #E53935;
+    font-size: 1.2em;
+}
+/*fin de los estilos de mensaje de error*/
