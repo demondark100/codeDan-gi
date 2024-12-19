@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import "../menu/menu.css";
+import "./menu.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -8,11 +8,11 @@ import { useState } from "react";
 // iconos
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars,faXmark,faEllipsisH } from '@fortawesome/free-solid-svg-icons';
-import logo from "../../public/logo.jpg";
+import logo from "../../../public/logo.jpg";
 
 
 // imagenes
-import userLogo from "@/public/user.png";
+import userLogo from "../../../public/user.png";
 
 
 
@@ -33,8 +33,7 @@ function Menu() {
         setShowProfile(!showProfile);
     }
 
-
-    return (  
+    return (
         <nav className="menuContent">
             <button onClick={()=>showHideMenu("s")} className="menuContent__icon">
                 <FontAwesomeIcon icon={faBars} size="2x"/>
@@ -61,10 +60,10 @@ function Menu() {
                         <Link onClick={()=>showHideMenu("h")} href={"/"}>Inicio</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/apuntes"}>Catalogo</Link>
+                        <Link onClick={()=>showHideMenu("h")} href={"/catalogo"}>Catalogo</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/proyectos"}>Productos</Link>
+                        <Link onClick={()=>showHideMenu("h")} href={"/productos"}>Productos</Link>
                     </li>
                     <li>
                         <Link onClick={()=>showHideMenu("h")} href={"/about"}>Sobre mi</Link>

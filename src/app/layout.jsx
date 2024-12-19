@@ -1,5 +1,5 @@
 import Menu from "@/componentes/menu/menu";
-import "../app/globals.css";
+import "./globals.css";
 
 export const metadata = {
   title: 'Next.js',

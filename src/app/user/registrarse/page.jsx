@@ -11,7 +11,7 @@ import zxcvbn from 'zxcvbn';
 
 
 // funcion para mostrar el boton cuando es necesario
-import {showHideBtnsInputUser} from "../componentesUser/moverPlaceholder";
+import { showHideBtnsInputUser } from "../componentesUser/moverPlaceholder";
 import MensajesModal from "@/componentes/mensajesModal/mensaje";
 
 

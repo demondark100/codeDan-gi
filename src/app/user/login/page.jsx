@@ -5,6 +5,7 @@ import { faEnvelope, faEye, faLock, faX } from "@fortawesome/free-solid-svg-icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useState ,useRef } from 'react';
+import { showHideBtnsInputUser } from "../componentesUser/moverPlaceholder";
 
 // función para mostrar u ocultar los botones de los inputs
 function Login() {
@@ -93,7 +94,10 @@ function Login() {
                 <h1>Iniciar sesión</h1>
 
                 {/* Correo electrónico */}
-                <div className="contentLoginForm--contentInputs">
+                <div 
+                    className="contentLoginForm--contentInputs"
+                    onClick={()=>showHideBtnsInputUser(inputsValue,setBtnsShow,0)}
+                >
                     <input
                         type="email"
                         value={inputsValue[0] || ""}
@@ -116,7 +120,10 @@ function Login() {
                 </div>
 
                 {/* Contraseña */}
-                <div className="contentLoginForm--contentInputs">
+                <div 
+                    className="contentLoginForm--contentInputs"
+                    onClick={()=>showHideBtnsInputUser(inputsValue,setBtnsShow,1)}
+                >
                     <input
                         ref={input}
                         type={inputType}

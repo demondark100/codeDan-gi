@@ -1,10 +1,11 @@
 import MensajesModal from "@/componentes/mensajesModal/mensaje";
 
-export default function Apuntes() {
+
+export default function Catalogo() {
     return (
         <main>
             <MensajesModal mensaje={`Esta parte por ahora esta en desarrollo.`}/>
-            <h1>Apuntes</h1>
+            <h1>Xd</h1>
         </main>
     )
 }

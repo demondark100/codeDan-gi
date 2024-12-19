@@ -1,7 +1,7 @@
 import "../app/not-found.css";
 import Image from "next/image";
 
-import logo from "../public/logo.jpg";
+import logo from "../../public/logo.jpg";
 
 function NotFound() {
     return (  
