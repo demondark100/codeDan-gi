@@ -89,16 +89,33 @@
     border: #2C2C2C .8px solid;
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .navCatalogoContent__inputContent--input input{ /*input*/
     background-color: transparent;
     outline: none;
     border: none;
-    padding: 8px;
+    padding: 8px 35px 8px 8px;
     color: #E0E0E0;
     font-size: 1.2em;
+    width: 100%;
 }
 .navCatalogoContent__inputContent--input input:placeholder{ /*placeholder*/
     color: #A0A0A0;
+}
+.navCatalogoContent__inputContent--input--btnDel{ /*boton para limpiar input*/
+    background-color: transparent;
+    border: none;
+    color: #A0A0A0;
+    font-size: 1.2em;
+    position: absolute;
+    right: 8px;
+}
+@media(min-width: 850px){
+    .navCatalogoContent__inputContent--input--btnDel{ /*boton para limpiar input*/
+        cursor: pointer;
+    }
 }
 /*fin de los estilos del input de busqueda*/
