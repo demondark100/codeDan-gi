@@ -1,0 +1,104 @@
+/*estilos del contenedor principal del catalogo*/
+.catalogoContent{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+/*fin de los estilos del catalogo principal del catalogo*/
+
+/*estilos del boton para abrir y cerrar el catalogo*/
+.catalogoContent--btnOpen{ /*boton*/
+    border: none;
+    background-color: transparent;
+    border: .8px solid #2C2C2C;
+    color: #E0E0E0;
+    font-size: 1.4em;
+    border-radius: 100px;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0,0) rotate(0deg);
+    transition-duration: .5s;
+}
+.catalogoContent--btnOpenRotate{ /*girar icono segun corresponda*/
+    transform: translate(60vw,0) rotate(180deg);
+    transition-duration: .5s;
+}
+.catalogoContent--btnOpen:hover{ /*cuando el mouse se pase en sima del boton*/
+    background-color: #505050;
+    transition-duration: .3s;
+}
+
+@media(min-width: 850px){
+    .catalogoContent--btnOpen{ /*boton*/
+        cursor: pointer;
+        transition-duration: .1s;
+    }
+    .catalogoContent--btnOpenRotate{ /*girar icono segun corresponda*/
+        transform: translate(250px,0) rotate(180deg);
+        transition-duration: .1s;
+    }
+}
+    
+/*fin de los estilos del boton del catalogo*/
+
+
+/*contenedor del nav para los capitulos*/
+.navCatalogoContent{ /*contenedor del nav*/
+    background-color: #121212;
+    width: 60vw;
+    height: calc(100vh - 50px);
+    transform: translate(-60vw,0);
+    transition-duration: .3s;
+    position: absolute;
+    bottom: 0;
+    border-right: .5px solid #2C2C2C;
+}
+.navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
+    transform: translate(0,0);
+    transition-duration: .3s;
+}
+@media(min-width: 850px){
+    .navCatalogoContent{ /*contenedor del nav*/
+        width: 250px;
+        transition-duration: .6s !important;
+    }
+    .navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
+        transition-duration: .2s !important;
+    }
+}
+/*fin de los estilos del nav para los capitulos*/
+
+
+
+/*contenedor del input de busqueda*/
+.navCatalogoContent__inputContent{ /*contenedor*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+}
+.navCatalogoContent__inputContent--input{ /*contenedor del input*/
+    border: #2C2C2C .8px solid;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.navCatalogoContent__inputContent--input input{ /*input*/
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 8px;
+    color: #E0E0E0;
+    font-size: 1.2em;
+}
+.navCatalogoContent__inputContent--input input:placeholder{ /*placeholder*/
+    color: #A0A0A0;
+}
+/*fin de los estilos del input de busqueda*/
