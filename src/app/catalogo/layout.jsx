@@ -1,8 +1,8 @@
+import CatalogoNav from "@/componentes/menuCatalogo/catalogo";
+
 export default function CatalogoLayout({children}) {
     return <>
-        <aside>
-            pepa
-        </aside>
         {children}
+        <CatalogoNav /> 
     </>
 }
