@@ -58,7 +58,7 @@
     transform: translate(-60vw,0);
     transition-duration: .3s;
     position: absolute;
-    bottom: 0;
+    top: 50px;
     border-right: .5px solid #2C2C2C;
 }
 .navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
