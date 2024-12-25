@@ -38,7 +38,7 @@ function CatalogoNav() {
     // obtener todas las rutas.
     const [rutas, setRutas] = useState([]);
     async function getData(){
-        const apiUrl = process.env.NODE_ENV === 'development' ? "http://localhost:3001/api/catalogo" : "https://buscores-server-gi-2.onrender.com";
+        const apiUrl = process.env.NODE_ENV === 'development' ? "http://localhost:3001/api/catalogo" : "https://buscores-server-gi-2.onrender.com/api/catalogo";
     
         const res = await fetch(apiUrl);
         const data = await res.json();
