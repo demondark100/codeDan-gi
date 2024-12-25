@@ -119,3 +119,68 @@
     }
 }
 /*fin de los estilos del input de busqueda*/
+
+
+
+
+/*estilos del boton de cada tecnologia*/
+.navCatalogoContent__btnRuta{ /*boton*/
+    background-color: #121212;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #E0E0E0;
+    font-size: 1.2em;
+    padding: 8px;
+}
+.navCatalogoContent__btnRuta span{ /*texto e icono*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 850px){
+    .navCatalogoContent__btnRuta{ /*boton*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos de cada boton de cada tecnologia*/
+
+
+
+/*estilos del li que contiene los capitulos y los enlaces*/
+.navCatalogoContent__capitulos{ /*li contenedor de todos los capitulos y enlaces*/
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #2C2C2C;
+    margin-left: 15px;
+}
+/*fin de los estilos del li que contiene los enlaces y capitulos*/
+
+/*estilos del nombre de cada lenguaje*/
+.navCatalogoContent__lenguajes{ /*contenedor capitulo*/
+    background-color: #121212;
+    color: #E0E0E0;
+    padding: 8px;
+    /* margin-left: 35px; */
+    font-size: 1.2em;
+}
+@media(min-width: 850px){
+    .navCatalogoContent__lenguajes{ /*contenedor capitulo*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos del nombre de cada lenguaje*/
+
+
+
+
+/*estilos de los enlaces para redireccionar.*/
+.navCatalogoContent__link{
+    padding: 8px;
+    margin-left: 15px;
+    color: #A0A0A0;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-left: 2px solid #2C2C2C;
+}
+/*fin de los elaces*/

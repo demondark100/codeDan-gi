@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./catalogo.css";
-import { faChevronLeft, faChevronRight, faX } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronLeft, faChevronRight, faChevronUp, faX } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 
 
@@ -34,12 +35,21 @@ function CatalogoNav() {
     }
 
 
+    // obtener todas las rutas.
+    const [rutas, setRutas] = useState([]);
+    async function getData(){
+        const apiUrl = process.env.NODE_ENV === 'development' ? "http://localhost:3001/api/catalogo" : "https://tu-servidor-en-produccion.com/";
+    
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        setRutas(data);
+    }
 
-    // const apiUrl = process.env.NODE_ENV === 'development' ? "http://localhost:3000/" : "https://tu-servidor-en-produccion.com/";
+    useEffect(()=>{getData()},[]);
 
-    // let datos = fetch(apiUrl)
-    //     .then(response => response.json())
-    //     .then(data => console.log(data));
+    // mostrar y ocultar lenguaje y capitulos.
+    const [openRutaIndex, setOpenRutaIndex] = useState(null);
+    const [openCapituloIndex, setOpenCapituloIndex] = useState(null);
     
     return ( 
         <div className="catalogoContent">
@@ -67,7 +77,49 @@ function CatalogoNav() {
                     </div>
                 </div>
 
-
+                {
+                    rutas.map((ruta, rutaIndex) => (
+                        <div key={rutaIndex}>
+                            <button 
+                                onClick={() => setOpenRutaIndex(openRutaIndex === rutaIndex ? null : rutaIndex)}
+                                className="navCatalogoContent__btnRuta"
+                            >
+                                <span>
+                                    {ruta.name}
+                                    <FontAwesomeIcon icon={openRutaIndex === rutaIndex ? faChevronUp : faChevronDown}/>
+                                </span>
+                            </button>
+                            {openRutaIndex === rutaIndex && (
+                                <ul>
+                                    {
+                                        ruta.capitulos.map((capitulo, capituloIndex) => (
+                                            <li 
+                                                key={capituloIndex}
+                                                className="navCatalogoContent__capitulos"
+                                            >
+                                                <h4 
+                                                    onClick={() => setOpenCapituloIndex(openCapituloIndex === capituloIndex ? null : capituloIndex)}
+                                                    className="navCatalogoContent__lenguajes"
+                                                >
+                                                    capitulo {capituloIndex + 1}
+                                                </h4>
+                                                {openCapituloIndex === capituloIndex && (
+                                                    Object.values(capitulo)[0].map((link, linkIndex) => (
+                                                        <Link
+                                                            key={linkIndex} 
+                                                            href={link.link}
+                                                            className="navCatalogoContent__link"
+                                                        >{link.title}</Link>
+                                                    ))
+                                                )}
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            )}
+                        </div>
+                    ))
+                }
 
             </nav>
 
@@ -79,7 +131,6 @@ function CatalogoNav() {
                 <FontAwesomeIcon icon={faChevronRight}/>
             </button>
         </div>
-
     );
 }
 
