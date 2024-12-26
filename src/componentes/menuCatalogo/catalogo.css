@@ -1,12 +1,13 @@
 /*estilos del contenedor principal del catalogo*/
 .catalogoContent{
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 50px);
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     display: flex;
-    align-items: center;
+    align-items: start;
+    pointer-events: none;
 }
 /*fin de los estilos del catalogo principal del catalogo*/
 
@@ -26,13 +27,15 @@
     align-items: center;
     transform: translate(0,0) rotate(0deg);
     transition-duration: .5s;
+    pointer-events: auto;
+    backdrop-filter: blur(5px);
 }
 .catalogoContent--btnOpenRotate{ /*girar icono segun corresponda*/
     transform: translate(60vw,0) rotate(180deg);
     transition-duration: .5s;
 }
 .catalogoContent--btnOpen:hover{ /*cuando el mouse se pase en sima del boton*/
-    background-color: #505050;
+    background-color: #50505036;
     transition-duration: .3s;
 }
 
@@ -54,12 +57,12 @@
 .navCatalogoContent{ /*contenedor del nav*/
     background-color: #121212;
     width: 60vw;
-    height: calc(100vh - 50px);
+    height: 100%;
     transform: translate(-60vw,0);
     transition-duration: .3s;
     position: absolute;
-    top: 50px;
     border-right: .5px solid #2C2C2C;
+    pointer-events: auto;
 }
 .navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
     transform: translate(0,0);
