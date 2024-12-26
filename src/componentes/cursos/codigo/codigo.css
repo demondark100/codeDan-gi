@@ -1,0 +1,22 @@
+/*estilos del contenedor principal*/
+.codigoContent{ /*contenedor principal*/
+    position: relative;
+}
+.codigoContent pre{ /*contenedor del codigo resaltado*/
+    margin: 0 !important;
+    border: .8px solid #545454 !important;
+}
+/*fin de los estilos principales*/
+
+/*estilos del boton para copiar*/
+.codigo__btnCopy{
+    color: #E0E0E0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+/*fin de los estilos del boton para copiar*/
