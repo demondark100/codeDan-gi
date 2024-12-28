@@ -41,12 +41,7 @@
 
 @media(min-width: 850px){
     .catalogoContent--btnOpen{ /*boton*/
-        cursor: pointer;
-        transition-duration: .1s;
-    }
-    .catalogoContent--btnOpenRotate{ /*girar icono segun corresponda*/
-        transform: translate(250px,0) rotate(180deg);
-        transition-duration: .1s;
+        display: none;
     }
 }
     
@@ -70,11 +65,9 @@
 }
 @media(min-width: 850px){
     .navCatalogoContent{ /*contenedor del nav*/
+        transform: translate(0,0);
         width: 250px;
         transition-duration: .6s !important;
-    }
-    .navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
-        transition-duration: .2s !important;
     }
 }
 /*fin de los estilos del nav para los capitulos*/
