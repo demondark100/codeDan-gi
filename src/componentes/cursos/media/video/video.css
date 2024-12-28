@@ -1,0 +1,14 @@
+.contentVideo{ /*contenedor de video*/
+    display: flex;
+    justify-content: center;
+}
+.contentVideo video{ /*video*/
+    width: 250px;
+    height: 250px;
+}
+@media(min-width: 850px){
+    .contentVideo video{ /*video*/
+        width: 350px;
+        height: 350px;
+    }
+}

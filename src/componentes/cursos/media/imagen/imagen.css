@@ -1,0 +1,153 @@
+/*contenedor de la imagen*/
+.imagenContent{  /*contenedor para centrar la imagen*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.imagenContentImg{ /*contenedor de la imagen*/
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.imagenContentImg__img{ /*imagen que se mostrara*/
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media(min-width: 850px){
+    .imagenContentImg{ /*contenedor de la imagen*/
+        width: 500px;
+        height: 500px;
+    }
+}
+/*fin de los estilos del contenedor de la imagen*/
+
+
+/*estilos del fondo indicativo de imagen*/
+.imagenContentImg__background{ /*contenedor del fondo para agrandar la imagen*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,#000,transparent,transparent,transparent,#000);
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .3s;
+}
+.imagenContentImg__backgroundShow{ /*mostrar opaciones para expandir imagenes*/
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+}
+/*fin de los estilos del fondo indicativo de imagen*/
+
+
+/*estilos del boton para expandir la imagen o no*/
+.imagenContentImg__btnExpand{ /*boton para expandir una imagen*/
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 1.2em;
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+    outline: none;
+    color: #E0E0E0;
+}
+@media (min-width: 850px){
+    .imagenContentImg__btnExpand{ /*boton para expandir una imagen*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos del boton que expande la imagen*/
+
+
+/*boton para reedirigir a algun enlace en una imagen*/
+.imagenContentImg__btnLink{ /*boton para redireccionar a un enlace en la imagen*/
+    position: absolute;
+    background-color: #3A3A3A;
+    padding: 8px;
+    width: 50%;
+    border-radius: 4px;
+}
+.imagenContentImg__btnLink a{ /*enlace para reedirigir*/
+    color: #E0E0E0;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+/*fin de los estilos del boton para redirigir a algun enlace*/
+
+
+
+/*estilos del contenedor de la imagen que se expande en toda la pantalla*/
+.imagenContentComplete{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .3s;
+    transition: opacity 0.3s ease-in-out;
+}
+.imagenContentCompleteShow{ /*mostrar toda la pantalla completa la imagen*/
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+}
+/*fin de los estilos del contenedor de la imagen que se expande en toda la pantalla*/
+
+
+/*contenedor del background para opciones en imagen completa*/
+.imagenContentComplete__background{/**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,#000,transparent,transparent,transparent,#000);
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .3s;
+    user-select: none;
+}
+.imagenContentComplete__backgroundShow{ /*mostrar opciones*/
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+}
+/*fin de los estilos del background para opciones en imagen completa*/
+
+/*boton para quitar la imagen completa*/
+.imagenContentComplete__btnExpand{ /*boton*/
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    color: #E0E0E0;
+    padding: 4px;
+    font-size: 1.4em;
+    border: none;
+    outline: none;
+}
+@media(min-width: 850px){
+    .imagenContentComplete__btnExpand{ /*boton*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos del boton para quitar el boton de la imagen*/

@@ -1,0 +1,104 @@
+/*estilos del contenedor base de todo resumenes*/
+.contentResumen{ /*contenedor de los reumenes*/
+    top: 50px;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    position: fixed;
+    z-index: 8;
+    pointer-events: none;
+}
+@media(min-width: 850px){
+    .contentResumen{ /*contenedor de los reumenes*/
+        width: calc(100% - 250px);
+    }
+}
+/*fin de los estilos del contenedor base de todos los resumenes*/
+
+
+
+
+/*estilos del icono*/
+.contentResumen__iconContent{ /*contenedor del icono y el texto*/
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    min-width: 98px;
+    align-items: center;
+    width: 100%;
+}
+
+.contentResumen__iconContent--icono{ /*icono*/
+    padding: 8px;
+    border-radius: 1000px;
+    backdrop-filter: blur(4px);
+    pointer-events: auto;
+    cursor: pointer;
+    font-size: 1.2em;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E0E0E0;
+    background-color: transparent;
+    border: .8px solid #2C2C2C;
+    order: 2;
+}
+.contentResumen__iconContent--parrafo{ /*parrafo indicativo*/
+    background-color: #121212a3;
+    backdrop-filter: blur(4px);
+    padding: 8px;
+    color: #E0E0E0 !important;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    user-select: none;
+    order: 1;
+    border: .8px solid #2C2C2C;
+}
+
+
+@media (min-width: 750px){
+    .contentResumen__iconContent{ /*contenedor del icono y el texto*/
+        flex-direction: row;
+        justify-content: end;
+    }
+}
+/*fin de los estilos del icono*/
+
+
+
+
+/*Estilos de la informacio*/
+.contentResumen__infoContent{ /*contenedor de la informacion*/
+    top: 0;
+    left: 0;
+    background-color: #12121289;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow: auto;
+    align-items: center;
+    padding: 15px;
+}
+.contentResumen__infoContent--info{ /*informacion*/
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contentResumen__infoContent::-webkit-scrollbar{ /*quitar scroll*/
+    display: none;
+}
+/*fin de los estilos de la informacion*/
