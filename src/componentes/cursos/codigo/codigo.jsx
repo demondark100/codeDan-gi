@@ -1,23 +1,69 @@
+"use client";
+
+// cosas de react
+import React, { useState } from 'react';
+
+// iconos
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+
+// libreria de resaltado de codigo
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { twilight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+// importar css
 import "./codigo.css";
 
 
 function Codigo({lenguaje,codigo}) {
+    // variable que cambia para mostrar o ocultar boton de copiar.
+    const [showBtnCopy, setShowBtnCopy] = useState(false);
+
+    // estado para mostrar mensaje de copiado o no.
+    const [showHideMsgCopy, setShowHideMsgCopy] = useState(false);
+
+    const copiarCodigo = () => {
+        navigator.clipboard.writeText(codigo)
+            .then(() => {
+                setShowHideMsgCopy(true);
+                setTimeout(() => {
+                    setShowHideMsgCopy(false);
+                }, 2000);
+            })
+            .catch(err => {
+                console.error('Error al copiar el código: ', err);
+            });
+    };
+
     return (
-        <div className='codigoContent'>
-            <button className='codigo__btnCopy'>
-                <FontAwesomeIcon icon={faCopy} />
-            </button>
+        <div 
+            className='codigoContent'
+            onDoubleClick={copiarCodigo}
+            onMouseOver={() => setShowBtnCopy(true)}
+            onMouseOut={() => setShowBtnCopy(false)}
+        >
+            {
+                showBtnCopy &&
+                <button 
+                    className='codigo__btnCopy'
+                    onClick={copiarCodigo}
+                >
+                    <FontAwesomeIcon icon={faCopy} />
+                </button>
+            }
+
+            {
+                showHideMsgCopy && <div className='codigo__msgCopyContent'>
+                    <p className='codigo__msgCopy'>
+                        Codigo copiado 
+                    </p>
+                </div>
+            }
+
             <SyntaxHighlighter language={lenguaje} style={twilight}>
                 {codigo}
             </SyntaxHighlighter>
         </div>  
-
     );
 }
 
