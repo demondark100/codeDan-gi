@@ -1,8 +1,9 @@
 .titulo{
-    font-size: 1em;
+    font-size: .8em;
     color: #E0E0E0;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .subtitulo{
     font-size: 1.2em;
