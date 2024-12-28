@@ -1,6 +1,7 @@
 .texto{
     color: #E0E0E0;
     font-size: 1.2em;
+    white-space: pre-wrap;
 }
 .textoLink{
     color: #4A90E2;
