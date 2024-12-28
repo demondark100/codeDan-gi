@@ -1,11 +1,11 @@
 .titulo{
-    font-size: 1.2em;
+    font-size: 1em;
     color: #E0E0E0;
     display: flex;
     justify-content: center;
 }
 .subtitulo{
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #E0E0E0;
     display: flex;
     justify-content: start;
