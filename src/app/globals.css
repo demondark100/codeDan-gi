@@ -4,9 +4,19 @@
     margin: 0;
 }
 
+/*scrol,(desbordamiento en toda la web)*/
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+/*fin del desboramiento de toda la web*/
+
+
 body{
     background-color: #121212;
-    overflow: auto;
 }
 main{
     position: relative;
