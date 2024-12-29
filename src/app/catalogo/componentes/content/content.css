@@ -1,0 +1,15 @@
+.contentCatalogo {
+    display: flex;
+}
+
+.contentCatalogo--start {
+    justify-content: flex-start;
+}
+
+.contentCatalogo--center {
+    justify-content: center;
+}
+
+.contentCatalogo--end {
+    justify-content: flex-end;
+}
