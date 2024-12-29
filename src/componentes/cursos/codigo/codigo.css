@@ -1,10 +1,38 @@
 /*estilos del contenedor principal*/
 .codigoContent{ /*contenedor principal*/
     position: relative;
+    overflow: hidden;
+    max-height: 250px;
 }
 .codigoContent pre{ /*contenedor del codigo resaltado*/
-    margin: 0 !important;
-    border: .8px solid #545454 !important;
+    border: .8px solid #2C2C2C;
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.codigoContent pre::-webkit-scrollbar{ /*overflow personalizado*/
+    background-color: #3A3A3A;
+    width: 10px;
+    height: 10px;
+}
+.codigoContent pre::-webkit-scrollbar-thumb{
+    background-color: #121212;
+}
+
+.codigoContentComplete{ /*pantalla completa*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: 3;
+    max-height: 100vh;
+}
+.codigoContentComplete pre{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
 }
 /*fin de los estilos principales*/
 
@@ -17,7 +45,7 @@
     font-size: 1.2em;
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 50px;
     padding: 4px;
 }
 
@@ -27,6 +55,25 @@
     }
 }
 /*fin de los estilos del boton para copiar*/ 
+
+/*boton para expandir la pantalla del codigo*/
+.codigo__btnExpand{
+    color: #E0E0E0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px;
+}
+@media (min-width: 858px){
+    .codigo__btnExpand{
+        cursor: pointer;
+    }
+}
+/*fin de los estiloes del boton para expandir pantalla*/
 
 
 /*contenedor del mensaje de copiado*/
