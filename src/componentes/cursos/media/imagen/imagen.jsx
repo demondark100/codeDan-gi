@@ -11,6 +11,7 @@ import "./imagen.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExpand } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Imagen = ({ src, alt, link = "" }) => {
     // mostrar opciones de la imagen
@@ -66,7 +67,7 @@ const Imagen = ({ src, alt, link = "" }) => {
                 </div>
 
                 {/* imagen */}
-                <img className='imagenContentImg__img' src={src} alt={alt} />
+                <Image className='imagenContentImg__img' src={src} alt={alt} />
             </div>
 
             {/* imagen de fondo */}
@@ -88,7 +89,7 @@ const Imagen = ({ src, alt, link = "" }) => {
                     </button>
                 </div>
                 {/* imagen */}
-                <img className='imagenContentImg__img' src={src} alt={alt} />
+                <Image className='imagenContentImg__img' src={src} alt={alt} />
             </div>
         </div>
     );
