@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // libreria de resaltado de codigo
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { twilight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 // importar css
 import "./codigo.css";
@@ -60,7 +60,7 @@ function Codigo({lenguaje,codigo}) {
                 </div>
             }
 
-            <SyntaxHighlighter language={lenguaje} style={twilight}>
+            <SyntaxHighlighter language={lenguaje} style={dracula}>
                 {codigo}
             </SyntaxHighlighter>
         </div>  
