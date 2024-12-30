@@ -28,10 +28,7 @@ function Resumen({
       <div className='contentResumen__iconContent'>
         <div 
           className='contentResumen__iconContent--icono'
-          onMouseOver={()=>{
-            setShowMsg(true);
-            setTimeout(() => setShowMsg(false), 5000);
-          }}
+          onMouseOver={()=>setShowMsg(true)}
           onMouseOut={()=>setShowMsg(false)}
           onClick={()=>setShowInfo(!showInfo)}
         >
