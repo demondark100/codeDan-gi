@@ -1,7 +1,7 @@
 .btn-border-conseptos-basicos{  /*boton con borde*/
     background-color: #3A3A3A;
     border: 1px solid #00f;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #E0E0E0;
     width: 95px;
     font-size: 1.2em;
@@ -10,7 +10,7 @@
 .btn-margin-conseptos-basicos{ /*botones de margen*/
     background-color: #3A3A3A;
     margin: 15px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #E0E0E0;
     width: 95px;
     font-size: 1.2em;
@@ -19,7 +19,7 @@
 .btn-padding-conseptos-basicos{ /*boton para padding*/
     background-color: #3A3A3A;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #E0E0E0;
     width: 95px;
     font-size: 1.2em;
