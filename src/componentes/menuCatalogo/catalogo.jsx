@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronRight, faChevronUp, faX } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronRight, faChevronUp, faSpinner, faX } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import "./catalogo.css";
+import Image from "next/image";
 
 function CatalogoNav() {
     const [showHideNav, setShowHideNav] = useState(false);
@@ -13,6 +14,11 @@ function CatalogoNav() {
     const [rutas, setRutas] = useState([]);
     const [openRutaIndex, setOpenRutaIndex] = useState(null);
     const [openCapituloIndex, setOpenCapituloIndex] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [suggestions, setSuggestions] = useState([]);
+
+    // estado para mostrar el párrafo llamado Catalogo
+    const [showParrafo, setShowParrafo] = useState(false);
 
     useEffect(() => {
         async function getData() {
@@ -20,6 +26,7 @@ function CatalogoNav() {
             const res = await fetch(apiUrl);
             const data = await res.json();
             setRutas(data);
+            setIsLoading(false);
         }
         getData();
     }, []);
@@ -27,11 +34,27 @@ function CatalogoNav() {
     function manejarInput(valor) {
         setInputSearch(valor);
         setShowHideBtnDel(valor.length > 0);
+        if (valor.length > 0) {
+            const newSuggestions = [];
+            rutas.forEach(ruta => {
+                ruta.capitulos.forEach(capitulo => {
+                    Object.values(capitulo)[0].forEach(tema => {
+                        if (tema.title.toLowerCase().includes(valor.toLowerCase())) {
+                            newSuggestions.push({ ...tema, logo: ruta.logo });
+                        }
+                    });
+                });
+            });
+            setSuggestions(newSuggestions);
+        } else {
+            setSuggestions([]);
+        }
     }
 
     function delContentInputSearch() {
         setInputSearch("");
         setShowHideBtnDel(false);
+        setSuggestions([]);
     }
 
     function toggleNav() {
@@ -49,6 +72,8 @@ function CatalogoNav() {
     return (
         <div className="catalogoContent">
             <nav className={`navCatalogoContent ${showHideNav ? "navCatalogoContentShow" : ""}`}>
+
+                {/* buscador */}
                 <div className="navCatalogoContent__inputContent">
                     <div className="navCatalogoContent__inputContent--input">
                         <input 
@@ -65,16 +90,43 @@ function CatalogoNav() {
                                 <FontAwesomeIcon icon={faX}/>
                             </button>
                         )}
+                    
+                        {/* sugerencias */}
+                        {suggestions.length > 0 && (
+                            <ul className="navCatalogoContent__suggestions">
+                                {suggestions.map((suggestion, index) => (
+                                    <li key={index}>
+                                        <Link href={suggestion.link}>
+                                            <img src={suggestion.logo} alt="logo" className="suggestion-logo"/>
+                                            {suggestion.title}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    
                     </div>
                 </div>
-                {rutas.map((ruta, rutaIndex) => (
+                
+                {isLoading && (
+                    <div className="catalogoContent__load">
+                        <FontAwesomeIcon icon={faSpinner}/>
+                        <p>Cargando...</p>
+                    </div>
+                )}
+
+                {/* navegación */}
+                {!isLoading && rutas.map((ruta, rutaIndex) => (
                     <div key={rutaIndex}>
                         <button 
                             onClick={() => toggleRutaIndex(rutaIndex)}
                             className="navCatalogoContent__btnRuta"
                         >
                             <span>
-                                {ruta.name}
+                                <div className="navCatalogoContent__btnRuta--imgTitle">
+                                    <img src={ruta.logo} alt="lenguaje"/>
+                                    {ruta.name}
+                                </div>
                                 <FontAwesomeIcon icon={openRutaIndex === rutaIndex ? faChevronUp : faChevronDown}/>
                             </span>
                         </button>
@@ -109,12 +161,23 @@ function CatalogoNav() {
                     </div>
                 ))}
             </nav>
-            <button 
-                className={`catalogoContent--btnOpen ${showHideNav ? "catalogoContent--btnOpenRotate" : ""}`}
-                onClick={toggleNav}
-            >
-                <FontAwesomeIcon icon={faChevronRight}/>
-            </button>
+
+            {/* botón para abrir el menú */}
+            <div className="catalogoContentBtnOpenCaps">
+                <button 
+                    className={`catalogoContent--btnOpen ${showHideNav ? "catalogoContent--btnOpenRotate" : ""}`}
+                    onClick={toggleNav}
+                    onMouseOver={() => setShowParrafo(true)}
+                    onMouseOut={() => setShowParrafo(false)}
+                >
+                    <FontAwesomeIcon icon={faChevronRight}/>
+                </button>
+                {showParrafo && (
+                    <p className="catalogoContentBtnOpenCaps--parrafo">
+                        Catálogo
+                    </p>
+                )}
+            </div>
         </div>
     );
 }
