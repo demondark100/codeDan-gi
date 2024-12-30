@@ -36,18 +36,18 @@ function ConceptosBasicosHTML() {
             <Titulo level={2} text={`Borde`}/>
             <Texto texto={`El borde es lo que tiene una caja alrededor, por ejemplo, tenemos este botón el cual tendrá un pequeño borde azul.`}/>
             <Content>
-                <button className="btn-border-conceptos-basicos">button</button>
+                <button className="btn-border-conseptos-basicos">button</button>
             </Content>
             <Titulo level={2} text={"Margen"}/>
             <Texto texto={`El margen en una caja es el espacio que existe desde la parte exterior de una caja, por ejemplo, estos dos botones tendrán un espacio.`}/>
             <Content>
-                <button className="btn-margin-conceptos-basicos">button</button>
-                <button className="btn-margin-conceptos-basicos">button</button>
+                <button className="btn-margin-conseptos-basicos">button</button>
+                <button className="btn-margin-conseptos-basicos">button</button>
             </Content>
             <Titulo level={2} text={`Padding`}/>
             <Texto texto={`Padding, a diferencia de margen, es el espacio que tiene una caja pero de forma interna, por ejemplo, este botón.`}/>
             <Content>
-                <button className="btn-padding-conceptos-basicos">button</button>
+                <button className="btn-padding-conseptos-basicos">button</button>
             </Content>
             <Titulo level={2} text={`Inspeccionar`}/>
             <Texto texto={`Ahora, para ver de forma más detallada todas las propiedades que tiene una caja, puedes inspeccionar la página y luego en la parte de "Styles" bajamos hasta abajo y veremos todas las propiedades de una caja.`}/>
