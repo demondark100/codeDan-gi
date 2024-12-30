@@ -11,7 +11,7 @@ function Web({ children }) {
 
     return (
         <div className={`web-container ${isFullScreen ? "full-screen" : ""}`}>
-            <div className="web-content">
+            <div className={`web-content ${isFullScreen ? "web-contentComplete":""}`}>
                 {children}
             </div>
             <button className="web-fullscreen-btn" onClick={toggleFullScreen}>
