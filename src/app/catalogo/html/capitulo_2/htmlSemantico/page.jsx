@@ -1,12 +1,40 @@
 import MainCap from "@/app/catalogo/componentes/main/main";
 import Web from "@/app/catalogo/componentes/web/web";
 import Codigo from "@/componentes/cursos/codigo/codigo";
+import Resumen from "@/componentes/cursos/resumen/resumen";
 import Texto from "@/componentes/cursos/texto/texto";
 import Titulo from "@/componentes/cursos/titulo/titulo";
 
 function HtmlSemantico() {
     return (  
         <MainCap>
+            <Resumen 
+                titulo={`HTML semantico`}
+                contenido={[{
+                  "mensaje": "Ahora veremos etiquetas que son muy generales osea que se usan casi todo el tiempo.",
+                  "lenguaje": "html",
+                  "codigo": `<body>
+  <!-- Los titulos van desde h1 hasta h6 -->
+  <h1>Contenido</h1>
+  <h2>Contenido</h2>
+  <h3>Contenido</h3>
+  <h4>Contenido</h4>
+  <h5>Contenido</h5>
+  <h6>Contenido</h6>
+
+  <!-- Los parrafos se representan con la etiqueta p -->
+  <p>Contenido</p>
+
+  <!-- Textos con estilos especiales -->
+  <b>Texto en negrita</b>
+  <i>Texto en itálico</i>
+  <strike>Texto tachado</strike>
+  <small>Letra pequeña</small>
+
+  <!-- Hay muchas más etiquetas pero esas son las más usadas. -->
+</body>`
+                }]}
+            />
             <Titulo level={1} text={`HTML semántico`}/>
             <Texto texto={`Aquí veremos algunas etiquetas de HTML para empezar con unos cuantos proyectos.`}/>
             <Titulo level={2} text={`Títulos`}/>
