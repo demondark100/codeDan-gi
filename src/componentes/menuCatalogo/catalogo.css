@@ -8,14 +8,22 @@
     display: flex;
     align-items: start;
     pointer-events: none;
+    z-index: 4;
 }
 /*fin de los estilos del catalogo principal del catalogo*/
 
 /*estilos del boton para abrir y cerrar el catalogo*/
+.catalogoContentBtnOpenCaps{ /*contenedor del boton y el parrafo*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 .catalogoContent--btnOpen{ /*boton*/
     border: none;
     background-color: transparent;
-    border: .8px solid #2C2C2C;
+    /* border: .8px solid #2C2C2C; */
     color: #E0E0E0;
     font-size: 1.4em;
     border-radius: 100px;
@@ -25,22 +33,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0,0) rotate(0deg);
+    transform: rotate(0deg);
     transition-duration: .5s;
     pointer-events: auto;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
 }
 .catalogoContent--btnOpenRotate{ /*girar icono segun corresponda*/
-    transform: translate(60vw,0) rotate(180deg);
+    /* transform: translate(60vw,0) rotate(180deg); */
+    transform: rotate(180deg);
     transition-duration: .5s;
 }
-.catalogoContent--btnOpen:hover{ /*cuando el mouse se pase en sima del boton*/
-    background-color: #50505036;
-    transition-duration: .3s;
+
+.catalogoContentBtnOpenCaps--parrafo{ /*parrafo indicativo*/
+    background-color: #121212;
+    border: .8px solid #2C2C2C;
+    padding: 8px;
+    color: #E0E0E0;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
 }
 
 @media(min-width: 850px){
-    .catalogoContent--btnOpen{ /*boton*/
+    .catalogoContentBtnOpenCaps{ /*boton*/
         display: none;
     }
 }
@@ -58,6 +75,7 @@
     position: absolute;
     border-right: .5px solid #2C2C2C;
     pointer-events: auto;
+    overflow: auto;
 }
 .navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
     transform: translate(0,0);
@@ -80,11 +98,11 @@
     justify-content: center;
     width: 100%;
     padding: 15px;
+    position: relative;
 }
 .navCatalogoContent__inputContent--input{ /*contenedor del input*/
     border: #2C2C2C .8px solid;
     border-radius: 8px;
-    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
@@ -133,6 +151,18 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.navCatalogoContent__btnRuta--imgTitle{ /*contenedor del titulo y la imagen*/
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navCatalogoContent__btnRuta img{
+    width: 35px;
+    height: 35px;
+    border-radius: 1000px;
+    object-fit: cover;
 }
 @media(min-width: 850px){
     .navCatalogoContent__btnRuta{ /*boton*/
@@ -180,3 +210,90 @@
     border-left: 2px solid #2C2C2C;
 }
 /*fin de los elaces*/
+
+
+
+
+/*estilos de las sugerencias*/
+.navCatalogoContent__suggestions{ /*contenedor de las sugerencias*/
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    background-color: #1E1E1E;
+    overflow: auto;
+    max-height: 380px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.navCatalogoContent__suggestions::-webkit-scrollbar{ /*estilos del scroll de sugerencias*/
+    background-color: #3A3A3A;
+    width: 10px;
+    height: 10px;
+}
+.navCatalogoContent__suggestions::-webkit-scrollbar-thumb{ /*indicador del scroll*/
+    background-color: #121212;
+}
+
+.navCatalogoContent__suggestions li a{ /*contenedor de cada sugerencias*/
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #E0E0E0;
+    font-size: 1.2em;
+    transition-duration: .3s;
+    cursor: auto;
+}
+.navCatalogoContent__suggestions li a:hover{ /*cuando el mpuse pase en sima de cada sugerencia*/
+    background-color: #505050;
+    transition-duration: .3s;
+}
+.navCatalogoContent__suggestions img{ /*imagen de las sugerencias*/
+    width: 35px;
+    height: 35px;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+
+@media(min-width: 850px){
+    .navCatalogoContent__suggestions{ /*contenedor de las sugerencias*/
+        cursor: pointer;
+    }
+}
+/*fin de los estilos de las sugerencias*/
+
+
+
+/*estilos del loader para recuperar los datos*/
+.catalogoContent__load{ /*contenedor del icono y el texto de cargando datos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    min-height: 85px;
+    flex-direction: column;
+    width: 100%;
+    color: #E0E0E0;
+    font-size: 1.4em;
+    padding-top: 25px;
+    user-select: none;
+}
+.catalogoContent__load svg{
+    font-size: 2em;
+    animation-name: animationLoadCatalogo;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animationLoadCatalogo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*fin de los estilos del loader para recuperar los datos del nav*/
