@@ -43,18 +43,23 @@ function Resumen({
       {
         showInfo && <div className='contentResumen__infoContent'>
           <Titulo level={1} text={titulo}/>
-          {
-            contenido.map((i,index)=>(
-              <div key={index} className='contentResumen__infoContent--info'>
-                {
-                  i.mensaje != undefined ? <Texto texto={i.mensaje}/> : null
-                }
-                {i.lenguaje && <Codigo lenguaje={i.lenguaje} codigo={i.codigo}/>}
-              </div>
-            ))
-          }
+
+          <div className="contentResumen__infoContentInfo">
+            {
+              contenido.map((i,index)=>(
+                <div key={index} className='contentResumen__infoContent--info'>
+                  {
+                    i.mensaje != undefined ? <Texto texto={i.mensaje}/> : null
+                  }
+                  {i.lenguaje && <Codigo lenguaje={i.lenguaje} codigo={i.codigo}/>}
+                </div>
+              ))
+            }
+          </div>
+
         </div>
       }
+
     </div>
   );
 }

@@ -83,13 +83,27 @@
     height: 100%;
     z-index: 0;
     pointer-events: auto;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.contentResumen__infoContentInfo{ /*contenedor del texto y el codigo*/
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow: auto;
+    padding: 15px;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    overflow: auto;
-    align-items: center;
-    padding: 15px;
+    gap: 24px;
 }
+.contentResumen__infoContentInfo::-webkit-scrollbar{
+    display: none;
+}
+
 .contentResumen__infoContent--info{ /*informacion*/
     width: 100%;
     max-width: 1800px;
