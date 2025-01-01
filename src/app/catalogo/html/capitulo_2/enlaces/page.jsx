@@ -4,6 +4,7 @@ import Codigo from "@/componentes/cursos/codigo/codigo";
 import Resumen from "@/componentes/cursos/resumen/resumen";
 import Texto from "@/componentes/cursos/texto/texto";
 import Titulo from "@/componentes/cursos/titulo/titulo";
+import Link from "next/link";
 
 function EnlacesHtml(){
     return (
@@ -75,7 +76,7 @@ Para esto debemos poner el valor "_blank" a target.`}/>
                 <h1>Pagina 1</h1>
                 <p>Esta es la pagina 1.</p>
                 <p>
-                <a href="/">click aquí.</a>
+                <Link href="/">click aquí.</Link>
                 para ir a la pagina 2
                 </p>
             </Web>
@@ -100,7 +101,7 @@ Para esto debemos poner el valor "_blank" a target.`}/>
                 <h1>Pagina 2</h1>
                 <p>Esta es la pagina 2.</p>
                 <p>
-                <a href="/">click aquí.</a>
+                <Link href="/">click aquí.</Link>
                 para ir a la pagina 1
                 </p>
             </Web>
@@ -130,9 +131,9 @@ Para esto debemos poner el valor "_blank" a target.`}/>
             <Web>
                 <h1>Esta es la pagina 1</h1>
                 <p>
-                <a href="/">
+                <Link href="/">
                     click aquí
-                </a>
+                </Link>
                 para ir a la pagina 2.
                 </p>
             </Web>
@@ -157,9 +158,9 @@ Para esto debemos poner el valor "_blank" a target.`}/>
         <Web>
             <h1>Esta es la pagina 2</h1>
             <p>
-            <a href="../pagina1.html">
+            <Link href="../pagina1.html">
                 click aquí
-            </a>
+            </Link>
             para ir a la pagina 1.
             </p>
         </Web>

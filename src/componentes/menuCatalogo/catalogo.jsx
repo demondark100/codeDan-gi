@@ -98,7 +98,7 @@ function CatalogoNav() {
                                 {suggestions.map((suggestion, index) => (
                                     <li key={index}>
                                         <Link href={suggestion.link}>
-                                            {/* <img src={suggestion.logo} alt="logo" className="suggestion-logo"/> */}
+                                            <img src={suggestion.logo} alt="logo" className="suggestion-logo"/>
                                             {suggestion.title}
                                         </Link>
                                     </li>
@@ -125,7 +125,7 @@ function CatalogoNav() {
                         >
                             <span>
                                 <div className="navCatalogoContent__btnRuta--imgTitle">
-                                    {/* <img src={ruta.logo} alt="lenguaje"/> */}
+                                    <img src={ruta.logo} alt="lenguaje"/>
                                     {ruta.name}
                                 </div>
                                 <FontAwesomeIcon icon={openRutaIndex === rutaIndex ? faChevronUp : faChevronDown}/>
