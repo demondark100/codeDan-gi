@@ -98,7 +98,7 @@ function CatalogoNav() {
                                 {suggestions.map((suggestion, index) => (
                                     <li key={index}>
                                         <Link href={suggestion.link}>
-                                            <img src={suggestion.logo} alt="logo" className="suggestion-logo"/>
+                                            {/* <img src={suggestion.logo} alt="logo" className="suggestion-logo"/> */}
                                             {suggestion.title}
                                         </Link>
                                     </li>
