@@ -16,40 +16,40 @@ function ListasHtml() {
                     "codigo": `<!-- Ordenadas -->
 <ol>
   <li>contenido</li>
-  <li>podemos poner cuantos "li" queramos</li>
+  <li>podemos poner cuantos &quot;li&quot; queramos</li>
 </ol>
 <!-- Desordenadas -->
 <ul>
   <li>contenido</li>
-  <li>podemos poner cuantos "li" queramos</li>
+  <li>podemos poner cuantos &quot;li&quot; queramos</li>
 </ul>`
                 }]}
             />
             <Titulo level={1} text={`Listas`}/>
             <Texto texto={`Existen dos tipos de listas: las ordenadas y las desordenadas.
 Ordenada:
-<ol></ol>
+&lt;ol&gt;&lt;/ol&gt;
 Desordenada:
-<ul></ul>
-Ambas deben contener la etiqueta <li>. Ahora veremos cómo es la estructura.`}/>
+&lt;ul&gt;&lt;/ul&gt;
+Ambas deben contener la etiqueta &lt;li&gt;. Ahora veremos cómo es la estructura.`}/>
             <Codigo lenguaje={"html"} codigo={`<!-- Ordenadas -->
 <ol>
   <li>contenido</li>
-  <li>podemos poner cuantos "li" queramos</li>
+  <li>podemos poner cuantos &quot;li&quot; queramos</li>
 </ol>
 <!-- Desordenadas -->
 <ul>
   <li>contenido</li>
-  <li>podemos poner cuantos "li" queramos</li>
+  <li>podemos poner cuantos &quot;li&quot; queramos</li>
 </ul>`}/>
             <Web>
                 <ol>
                     <li>contenido</li>
-                    <li>podemos poner cuantos "li" queramos</li>
+                    <li>podemos poner cuantos &quot;li&quot; queramos</li>
                 </ol>
                 <ul>
                     <li>contenido</li>
-                    <li>podemos poner cuantos "li" queramos</li>
+                    <li>podemos poner cuantos &quot;li&quot; queramos</li>
                 </ul>
             </Web>
             <Titulo level={2} text={`Ejercicio 1`}/>
