@@ -125,7 +125,7 @@ function CatalogoNav() {
                         >
                             <span>
                                 <div className="navCatalogoContent__btnRuta--imgTitle">
-                                    <img src={ruta.logo} alt="lenguaje"/>
+                                    {/* <img src={ruta.logo} alt="lenguaje"/> */}
                                     {ruta.name}
                                 </div>
                                 <FontAwesomeIcon icon={openRutaIndex === rutaIndex ? faChevronUp : faChevronDown}/>
