@@ -18,7 +18,7 @@ function EnlacesHtml(){
                     "lenguaje": `html`,
                     "codigo": `<a href="../ruta" target="_blank">click aquí</a>`  
                 },{
-                    "mensaje": `El atributo "target" no es obligatorio, podemos usar lo solo si deseamos.`
+                    "mensaje": `El atributo "target" no es obligatorio, podemos usarlo solo si deseamos.`
                 }]}
             />
             <Titulo level={1} text={`Enlaces`}/>
