@@ -35,6 +35,7 @@ function HtmlSemantico() {
 </body>`
               }]}
             />
+            <Titulo level={1} text={`Ppepa`}/>
             <Titulo level={1} text={`HTML semántico`}/>
             <Texto texto={`Aquí veremos algunas etiquetas de HTML para empezar con unos cuantos proyectos.`}/>
             <Titulo level={2} text={`Títulos`}/>
