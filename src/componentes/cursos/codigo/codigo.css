@@ -80,10 +80,13 @@
 
 /*contenedor del mensaje de copiado*/
 .codigo__msgCopyContent{ /*contenedor del mensaje*/
+    margin: 0 !important;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00000046;
+    background-color: #0000008c;
     backdrop-filter: blur(2px);
     display: flex;
     justify-content: center;

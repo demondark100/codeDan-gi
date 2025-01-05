@@ -8,22 +8,26 @@ import Titulo from "@/componentes/cursos/titulo/titulo";
 function BrHtml() {
     return (
         <MainCap>
-
-
-            {/* <Resumen 
-                titulo={"br"}
-                contenido={[{
-                    "mensaje": `<br> sirve para dejar un espacio en línea.`,
-                    "lenguaje": "html",
-                    "codigo": `<p>
+            <Resumen>
+                <Titulo text={"br"}/>
+                <Texto texto={`<br> sirve para dejar un espacio en línea.`}/>
+                <Codigo lenguaje={"html"} codigo={`<p>
   esto también será una <br>
   oración demasiado larga pero tendrá saltos <br>
   de línea pero esta vez también <br>
   estoy haciendo los saltos en línea en <br>
   el editor de código para que sea más legible.
-</p>`
-                }]}
-            /> */}
+</p>`}/>
+                <Web>
+                    <p>
+                        esto también será una <br />
+                        oración demasiado larga pero tendrá saltos <br />
+                        de línea pero esta vez también <br />
+                        estoy haciendo los saltos en línea en <br />
+                        el editor de código para que sea más legible.
+                    </p>
+                </Web>
+            </Resumen>
 
 
             <Titulo level={1} text={`br`}/>

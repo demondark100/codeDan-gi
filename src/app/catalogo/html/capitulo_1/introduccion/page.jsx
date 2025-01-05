@@ -7,19 +7,13 @@ import Titulo from "@/componentes/cursos/titulo/titulo";
 function IntroduccionHtml() {
     return (  
         <MainCap>
-
-
-            {/* <Resumen 
-                titulo={"Introducción a HTML"}
-                contenido={[{
-                    "mensaje": `Para crear un archivo HTML es necesario que tenga la extensión ".html".`,
-                    "lenguaje": "html",
-                    "codigo": `index.html <!-- para página principal -->
-archivo.html <!-- Para nombrar una página cualquiera -->`
-                }, {
-                    "mensaje": `Para abrir la consola del navegador se debe presionar "F12" e ir a "Elementos" o hacer clic derecho y seleccionar "Inspeccionar".`
-                }]}
-            /> */}
+            <Resumen>
+                <Titulo text={`Introducción a HTML`} />
+                <Texto texto={`Para crear un archivo HTML es necesario que tenga la extensión ".html".`}/>
+                <Codigo lenguaje={"html"} codigo={`index.html <!-- para página principal -->
+archivo.html <!-- Para nombrar una página cualquiera -->`}/>
+                <Texto texto={`Para abrir la consola del navegador se debe presionar "F12" e ir a "Elementos" o hacer clic derecho y seleccionar "Inspeccionar".`}/>
+            </Resumen>
 
 
 

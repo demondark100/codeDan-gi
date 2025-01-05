@@ -10,20 +10,19 @@ function EnlacesHtml(){
     return (
         <MainCap>
 
-
-            {/* <Resumen 
-                titulo={"Enlaces"}
-                contenido={[{
-                    "mensaje": `Los enlaces se estructuran así:`,
-                    "lenguaje": `html`,
-                    "codigo": `<a href="enlace" target="abrir en otra pestaña">contenido</a>`
-                },{
-                    "lenguaje": `html`,
-                    "codigo": `<a href="../ruta" target="_blank">click aquí</a>`  
-                },{
-                    "mensaje": `El atributo "target" no es obligatorio, podemos usarlo solo si deseamos.`
-                }]}
-            /> */}
+            <Resumen>
+              <Titulo text={`Enlaces`}/>
+              <Texto texto={`Los enlaces se estructuran así:`}/>
+              <Codigo lenguaje={"html"} codigo={`<a href="enlace" target="abrir en otra pestaña">contenido</a>`}/>
+              <Web>
+                <Link href={"#"}>contenido</Link>
+              </Web>
+              <Codigo lenguaje={"html"} codigo={`<a href="../ruta" target="_blank">click aquí</a>`}/>
+              <Web>
+                <Link href="#">click aquí</Link>
+              </Web>
+              <Texto texto={`El atributo "target" no es obligatorio, podemos usarlo solo si deseamos.`}/>
+            </Resumen>
 
 
 

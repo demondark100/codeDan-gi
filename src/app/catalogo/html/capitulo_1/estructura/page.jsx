@@ -28,35 +28,10 @@ En ambos casos se creará esta estructura básica de HTML.`}/>
   </body>
 </html>`}/>
               <Web>
-                <h1>pepa</h1>
                 <p>Contenido de la página</p>
               </Web>
             </Resumen>
 
-          
-            {/* <Resumen 
-                titulo={`Estructura HTML`}
-                contenido={[{
-                    "mensaje": `Para evitar escribir la estructura de forma manual, "VSCode" y "Sublime Text" tienen formas de hacer eso rápido.
-
-En VSCode: escribe "!" y luego presiona "TAB".
-
-En Sublime Text: escribe "html" y luego presiona "TAB".
-
-En ambos casos se creará esta estructura básica de HTML.`,
-                    "lenguaje": "html",
-                    "codigo": `<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Título de la página</title>
-  </head>
-  <body>
-    Contenido de la página
-  </body>
-</html>`
-                }]}
-            /> */}
 
 
             <Titulo level={1} text={`Estructura HTML`}/>

@@ -9,14 +9,10 @@ function ListasHtml() {
     return (  
         <MainCap>
 
-
-
-            {/* <Resumen 
-                titulo={`Listas`}
-                contenido={[{
-                    "mensaje": `Hay dos tipos de listas: ordenadas y desordenadas. Ambas deben llevar de forma obligatoria la etiqueta <li> dentro de ellas. La etiqueta <ol> se utiliza para listas enumeradas, mientras que la etiqueta <ul> se usa para listas desordenadas, es decir, que no se enumeran.`,
-                    "lenguaje": "html",
-                    "codigo": `<!-- Ordenadas -->
+          <Resumen>
+            <Titulo text={`Listas`}/>
+            <Texto texto={`Hay dos tipos de listas: ordenadas y desordenadas. Ambas deben llevar de forma obligatoria la etiqueta <li> dentro de ellas. La etiqueta <ol> se utiliza para listas enumeradas, mientras que la etiqueta <ul> se usa para listas desordenadas, es decir, que no se enumeran.`}/>
+            <Codigo lenguaje={"html"} codigo={`<!-- Ordenadas -->
 <ol>
   <li>contenido</li>
   <li>podemos poner cuantos &quot;li&quot; queramos</li>
@@ -25,9 +21,18 @@ function ListasHtml() {
 <ul>
   <li>contenido</li>
   <li>podemos poner cuantos &quot;li&quot; queramos</li>
-</ul>`
-                }]}
-            /> */}
+</ul>`}/>
+            <Web>
+              <ol>
+                <li>contenido</li>
+                <li>podemos poner cuantos &quot;li&quot; queramos</li>
+              </ol>
+              <ul>
+                <li>contenido</li>
+                <li>podemos poner cuantos &quot;li&quot; queramos</li>
+              </ul>
+            </Web>
+          </Resumen>
 
 
 

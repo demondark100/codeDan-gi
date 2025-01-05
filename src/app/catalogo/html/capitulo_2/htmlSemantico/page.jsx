@@ -9,14 +9,10 @@ function HtmlSemantico() {
     return (  
         <MainCap>
 
-
-
-            {/* <Resumen 
-                titulo={`HTML semántico`}
-                contenido={[{
-                  "mensaje": "Ahora veremos etiquetas que son muy generales, es decir, que se usan casi todo el tiempo.",
-                  "lenguaje": "html",
-                  "codigo": `<body>
+            <Resumen>
+              <Titulo text={`HTML semántico`}/>
+              <Texto texto={`Ahora veremos etiquetas que son muy generales, es decir, que se usan casi todo el tiempo.`}/>
+              <Codigo lenguaje={"html"} codigo={`<body>
   <!-- Los títulos van desde h1 hasta h6 -->
   <h1>Contenido</h1>
   <h2>Contenido</h2>
@@ -35,9 +31,21 @@ function HtmlSemantico() {
   <small>Letra pequeña</small>
 
   <!-- Hay muchas más etiquetas pero esas son las más usadas. -->
-</body>`
-              }]}
-            /> */}
+</body>`}/>
+              <Web>
+                <h1>Contenido</h1>
+                <h2>Contenido</h2>
+                <h3>Contenido</h3>
+                <h4>Contenido</h4>
+                <h5>Contenido</h5>
+                <h6>Contenido</h6>
+                <p>Contenido</p>
+                <b>Texto en negrita</b>
+                <i>Texto en itálico</i>
+                <strike>Texto tachado</strike>
+                <small>Letra pequeña</small>
+              </Web>
+            </Resumen>
 
 
 
