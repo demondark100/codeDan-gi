@@ -8,7 +8,9 @@ import Titulo from "@/componentes/cursos/titulo/titulo";
 function BrHtml() {
     return (
         <MainCap>
-            <Resumen 
+
+
+            {/* <Resumen 
                 titulo={"br"}
                 contenido={[{
                     "mensaje": `<br> sirve para dejar un espacio en línea.`,
@@ -21,7 +23,9 @@ function BrHtml() {
   el editor de código para que sea más legible.
 </p>`
                 }]}
-            />
+            /> */}
+
+
             <Titulo level={1} text={`br`}/>
             <Texto texto={`Esta etiqueta sirve para dar saltos en línea por ejemplo al escribir algo largo, esta etiqueta no necesita una etiqueta de cierre como las otras etiquetas.
 

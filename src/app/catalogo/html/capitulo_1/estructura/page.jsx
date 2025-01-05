@@ -1,4 +1,5 @@
 import MainCap from "@/app/catalogo/componentes/main/main";
+import Web from "@/app/catalogo/componentes/web/web";
 import Codigo from "@/componentes/cursos/codigo/codigo";
 import Resumen from "@/componentes/cursos/resumen/resumen";
 import Texto from "@/componentes/cursos/texto/texto";
@@ -7,7 +8,33 @@ import Titulo from "@/componentes/cursos/titulo/titulo";
 function EstructuraHtml() {
     return (
         <MainCap>
-            <Resumen 
+            <Resumen>
+              <Titulo level={1} text={`Estructura HTML`}/>
+              <Texto texto={`Para evitar escribir la estructura de forma manual, "VSCode" y "Sublime Text" tienen formas de hacer eso rápido.
+
+En VSCode: escribe "!" y luego presiona "TAB".
+
+En Sublime Text: escribe "html" y luego presiona "TAB".
+
+En ambos casos se creará esta estructura básica de HTML.`}/>
+              <Codigo lenguaje={"html"} codigo={`<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+  </head>
+  <body>
+    Contenido de la página
+  </body>
+</html>`}/>
+              <Web>
+                <h1>pepa</h1>
+                <p>Contenido de la página</p>
+              </Web>
+            </Resumen>
+
+          
+            {/* <Resumen 
                 titulo={`Estructura HTML`}
                 contenido={[{
                     "mensaje": `Para evitar escribir la estructura de forma manual, "VSCode" y "Sublime Text" tienen formas de hacer eso rápido.
@@ -29,7 +56,9 @@ En ambos casos se creará esta estructura básica de HTML.`,
   </body>
 </html>`
                 }]}
-            />
+            /> */}
+
+
             <Titulo level={1} text={`Estructura HTML`}/>
             <Texto texto={`Ahora que sabemos cómo es la sintaxis de HTML, vamos a explicar la estructura que tiene HTML. Esta estructura se debe crear en cada página que vamos a crear.`}/>
             <Codigo lenguaje={"html"} codigo={`<!DOCTYPE html>

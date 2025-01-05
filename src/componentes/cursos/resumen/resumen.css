@@ -1,17 +1,12 @@
 /*estilos del contenedor base de todo resumenes*/
 .contentResumen{ /*contenedor de los reumenes*/
-    top: 50px;
+    top: 0;
     right: 0;
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     position: fixed;
     z-index: 8;
     pointer-events: none;
-}
-@media(min-width: 850px){
-    .contentResumen{ /*contenedor de los reumenes*/
-        width: calc(100% - 250px);
-    }
 }
 /*fin de los estilos del contenedor base de todos los resumenes*/
 
@@ -28,6 +23,7 @@
     min-width: 98px;
     align-items: center;
     width: 100%;
+    z-index: 2;
 }
 
 .contentResumen__iconContent--icono{ /*icono*/
@@ -65,6 +61,7 @@
         flex-direction: row;
         justify-content: end;
         width: calc(100% - 265px);
+        right: 0;
     }
 }
 /*fin de los estilos del icono*/
@@ -74,44 +71,50 @@
 
 /*Estilos de la informacio*/
 .contentResumen__infoContent{ /*contenedor de la informacion*/
-    top: 0;
-    left: 0;
+    top: 50px;
     background-color: #12121289;
     backdrop-filter: blur(8px);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 50px);
     z-index: 0;
     pointer-events: auto;
-    justify-content: center;
-    padding-top: 15px;
-}
-
-.contentResumen__infoContentInfo{ /*contenedor del texto y el codigo*/
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 70px);
     overflow: auto;
-    padding: 15px;
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.contentResumen__infoContentInfo::-webkit-scrollbar{
-    display: none;
 }
 
-.contentResumen__infoContent--info{ /*informacion*/
+
+.contentResumen__infoContent--info{ /*contenedor del children*/
+    height: 100%;
     width: 100%;
-    max-width: 1800px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    overflow: auto;
+    padding: 0 15px 0 15px;
 }
-.contentResumen__infoContent::-webkit-scrollbar{ /*quitar scroll*/
-    display: none;
+
+/*estilos del scroll*/
+.contentResumen__infoContent--info::-webkit-scrollbar{ 
+    background-color: #3A3A3A;
+    width: 10px;
+    height: 10px;
+}
+.contentResumen__infoContent--info::-webkit-scrollbar-thumb{
+    background-color: #121212;
+}
+
+
+
+.contentResumen__infoContent--info div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contentResumen__infoContent--info p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 850px){
+    .contentResumen__infoContent{ /*contenedor de la informacion*/
+        width: calc(100% - 250px);
+        right: 0;
+    }
 }
 /*fin de los estilos de la informacion*/

@@ -7,7 +7,9 @@ import Titulo from "@/componentes/cursos/titulo/titulo";
 function IntroduccionHtml() {
     return (  
         <MainCap>
-            <Resumen 
+
+
+            {/* <Resumen 
                 titulo={"Introducción a HTML"}
                 contenido={[{
                     "mensaje": `Para crear un archivo HTML es necesario que tenga la extensión ".html".`,
@@ -17,7 +19,10 @@ archivo.html <!-- Para nombrar una página cualquiera -->`
                 }, {
                     "mensaje": `Para abrir la consola del navegador se debe presionar "F12" e ir a "Elementos" o hacer clic derecho y seleccionar "Inspeccionar".`
                 }]}
-            />
+            /> */}
+
+
+
             <Titulo level={1} text="Introducción" />
             <Texto texto="HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Se utiliza para estructurar y presentar contenido en la web." />
             <Texto texto="Para crear un archivo HTML es necesario crear un archivo con la extensión '.html'." />

@@ -9,24 +9,25 @@ import Imagen from "@/componentes/cursos/media/imagen/imagen";
 // imagenes
 import propiedades from "./caja.png";
 import Resumen from "@/componentes/cursos/resumen/resumen";
+import Web from "@/app/catalogo/componentes/web/web";
 
 
 function ConceptosBasicosHTML() {
     return (
         <MainCap>
-            <Resumen 
-                titulo={"Conceptos básicos"}
-                contenido={[{
-                    "mensaje": `La sintaxis de HTML se basa en "<>" y "</>".`,
-                    "lenguaje": "html",
-                    "codigo": `<button>botón</button>`
-                },{
-                    "mensaje": `Cada caja tiene propiedades en común que serían:
+            <Resumen>
+                <Titulo level={1} text={`Conceptos básicos`}/>
+                <Texto texto={`La sintaxis de HTML se basa en "<>" y "</>".`}/>
+                <Codigo lenguaje={"html"} codigo={`<button>botón</button>`}/>
+                <Web>
+                    <button>botón</button>
+                </Web>
+                <Texto texto={`Cada caja tiene propiedades en común que serían:
 1. Border: Bordes de las cajas.
 2. Margen: Espacio que tiene una caja por fuera.
-3. Padding: Espacio que tiene una caja por dentro.`
-                }]}
-            />
+3. Padding: Espacio que tiene una caja por dentro.`}/>
+            </Resumen>
+
             <Titulo level={1} text={`Conceptos básicos`}/>
             <Texto texto={`La sintaxis de HTML es muy sencilla, esto debido a que una página web está hecha de varias cajas, por ejemplo, los menús u otras cosas.`}/>
             <Titulo level={2} text={`Sintaxis`}/>

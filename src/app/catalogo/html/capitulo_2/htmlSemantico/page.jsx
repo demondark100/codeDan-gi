@@ -8,7 +8,10 @@ import Titulo from "@/componentes/cursos/titulo/titulo";
 function HtmlSemantico() {
     return (  
         <MainCap>
-            <Resumen 
+
+
+
+            {/* <Resumen 
                 titulo={`HTML semántico`}
                 contenido={[{
                   "mensaje": "Ahora veremos etiquetas que son muy generales, es decir, que se usan casi todo el tiempo.",
@@ -34,7 +37,10 @@ function HtmlSemantico() {
   <!-- Hay muchas más etiquetas pero esas son las más usadas. -->
 </body>`
               }]}
-            />
+            /> */}
+
+
+
             <Titulo level={1} text={`HTML semántico`}/>
             <Texto texto={`Aquí veremos algunas etiquetas de HTML para empezar con unos cuantos proyectos.`}/>
             <Titulo level={2} text={`Títulos`}/>

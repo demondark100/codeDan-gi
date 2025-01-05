@@ -9,7 +9,9 @@ import Link from "next/link";
 function EnlacesHtml(){
     return (
         <MainCap>
-            <Resumen 
+
+
+            {/* <Resumen 
                 titulo={"Enlaces"}
                 contenido={[{
                     "mensaje": `Los enlaces se estructuran así:`,
@@ -21,7 +23,10 @@ function EnlacesHtml(){
                 },{
                     "mensaje": `El atributo "target" no es obligatorio, podemos usarlo solo si deseamos.`
                 }]}
-            />
+            /> */}
+
+
+
             <Titulo level={1} text={`Enlaces`}/>
             <Texto texto={`Esta etiqueta nos sirve para redirigir al usuario hacia otra parte de nuestra página web o a otros sitios, por ejemplo, Facebook, YouTube, etc.
 
