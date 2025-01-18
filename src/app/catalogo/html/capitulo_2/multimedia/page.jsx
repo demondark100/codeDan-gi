@@ -50,6 +50,11 @@ Luego el atributo "alt" es para poner un mensaje por si acaso laimagen se borra.
             <Web>
                 <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" alt="javaScript" />
             </Web>
+            <Texto texto={`Tambien tenemos el atributo title que nos permite poner un titulo que se mostrara cuando el mouse pase en sima de una imagen.`}/>
+            <Codigo lenguaje={"html"} codigo={`<img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" title="javaScript">`}/>
+            <Web>
+                <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" alt="javaScript" title="javaScript" />
+            </Web>
 
             <Titulo level={2} text={`video`}/>
             <Texto texto={`Esta etiqueta es para poner videos y que a diferencia de "img" esta si necesita un sierre.`}/>
