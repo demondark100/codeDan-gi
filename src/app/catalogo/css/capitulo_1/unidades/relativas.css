@@ -1,0 +1,15 @@
+.content--caja--unidadesRelativasCss--1{
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+    margin: 15px;
+    border: 1px solid #000;
+    width: 25%;
+    height: 250px;
+}
+.content--caja--unidadesRelativasCss--2{
+    width: 100%;
+    border: 1px solid #000;
+    height: 35px;
+    margin: 8px;
+}

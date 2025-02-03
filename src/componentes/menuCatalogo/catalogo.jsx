@@ -22,8 +22,8 @@ function CatalogoNav() {
 
     useEffect(() => {
         async function getData() {
-            const apiUrl = "https://buscores-server-gi-2.onrender.com/api/catalogo";
-            // const apiUrl = "http://localhost:3001/api/catalogo";
+            // const apiUrl = "https://buscores-server-gi-2.onrender.com/api/catalogo";
+            const apiUrl = "http://localhost:3001/api/catalogo";
             const res = await fetch(apiUrl);
             const data = await res.json();
             setRutas(data);
@@ -40,9 +40,15 @@ function CatalogoNav() {
             rutas.forEach(ruta => {
                 ruta.capitulos.forEach(capitulo => {
                     Object.values(capitulo)[0].forEach(tema => {
-                        if (tema.title.toLowerCase().includes(valor.toLowerCase())) {
-                            newSuggestions.push({ ...tema, logo: ruta.logo });
-                        }
+                        tema.words.forEach(i=>{
+                            if (i.toLowerCase().includes(valor.toLowerCase())) {
+                                newSuggestions.push({ ...tema, logo: ruta.logo });
+                                console.log(i)
+                            }
+                        })
+                        // if (tema.title.toLowerCase().includes(valor.toLowerCase())) {
+                        //     newSuggestions.push({ ...tema, logo: ruta.logo });
+                        // }
                     });
                 });
             });

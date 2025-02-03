@@ -1,0 +1,17 @@
+.unidade2--css--allscreen{ /*contenedor de ejemplo de viweport*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+}
+
+.css--porcentaje--content--unidades2{ /*contenedor de ejemplo de porcentajes*/
+    width: 256px;
+    height: 256px;
+    background-color: black;
+}
+.css--porcentaje--content--unidades2 div{ /*caja interna de ejemplo de porcentajes*/
+    width: 100%;
+    height: 50%;
+    background-color: greenyellow;
+}

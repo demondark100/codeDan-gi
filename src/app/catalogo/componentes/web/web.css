@@ -66,10 +66,3 @@
     margin: 0 !important;
 }
 /* Fin de los estilos de la web en pantalla completa */
-
-
-
-/*reiniciar estilos en resumen*/
-.web-content div{margin: 0 !important;}
-.web-content p{margin: 0 !important;}
-/*fin del reinicio*/

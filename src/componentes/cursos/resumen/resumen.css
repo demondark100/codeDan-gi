@@ -79,37 +79,16 @@
     height: calc(100% - 50px);
     z-index: 0;
     pointer-events: auto;
+    padding: 15px;
+    padding-bottom: 55px;
     overflow: auto;
-}
-
-
-.contentResumen__infoContent--info{ /*contenedor del children*/
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    padding: 0 15px 0 15px;
-}
-
-/*estilos del scroll*/
-.contentResumen__infoContent--info::-webkit-scrollbar{ 
-    background-color: #3A3A3A;
-    width: 10px;
-    height: 10px;
-}
-.contentResumen__infoContent--info::-webkit-scrollbar-thumb{
-    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
 
-.contentResumen__infoContent--info div{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.contentResumen__infoContent--info p{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 @media (min-width: 850px){
     .contentResumen__infoContent{ /*contenedor de la informacion*/

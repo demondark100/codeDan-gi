@@ -14,8 +14,8 @@ function Resumen({children}) {
   const [showInfo, setShowInfo] = useState(false); // mostrar resumen
 
 
-
   return (  
+    
     <div className='contentResumen'>
 
       <div className='contentResumen__iconContent'>
@@ -36,14 +36,9 @@ function Resumen({children}) {
 
       {
         showInfo && <div className="contentResumen__infoContent">
-            <div className="contentResumen__infoContent--info">
-            {children}
-            </div>
+          {children}
         </div>
       }
-
-
-
     </div>
   );
 }

@@ -1,0 +1,83 @@
+.css--backgroundColor--ejemplo{ /*ejemplo de background color*/
+    width: 50%;
+    height: 80px;
+    background-color: red;
+}
+
+.css--backgroundImage--ejemplo{ /*ejemplo de background image*/
+    width: 100%;
+    height: 250px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+}
+
+.css-backgroundSize--ejemplo{ /*ejemplo de background size*/
+    width: 100%;
+    height: 250px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    background-size: cover;
+}
+
+.css--backgroundRepeat--ejemplo{ /*ejemplo de background repeat*/
+    width: 75%;
+    height: 180px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    background-repeat: repeat;
+}
+
+.css--backgroundNoRepeat--ejemplo{ /*background no repeat css ejemplo*/
+    width: 75%;
+    height: 180px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    background-repeat: no-repeat;
+}
+
+.css--backgroundClip--ejemplo{ /*ejemplo de background clip*/
+    width: 75%;
+    height: 150px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.css--backgroundPosition--ejemplo1{ /*ejemplo de background position*/
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    width: 75%;
+    height: 150px;
+    background-size: 65% 35%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    border: 4px solid #2eff55;
+    background-position: center center;
+}
+
+.css--backgroundPosition--ejemplo2{  /*ejemplo 2 de background position*/
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    width: 75%;
+    height: 150px;
+    background-size: 65% 35%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    border: 4px solid #2eff55;
+    background-position: start center;
+}
+
+
+.css--backgroundAttachment--ejemplo1{ /*ejemplo de background attauchment*/
+    width: 75%;
+    height: 150px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.css--backgroundAttachment--ejemplo2{ /*ejemplo 2 de background attauchment*/
+    width: 75%;
+    height: 150px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vVQmOEYUC3sOv7yVNBohQcHIpL7XFbuuLg&s");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: scroll;
+}

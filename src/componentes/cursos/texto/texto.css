@@ -3,7 +3,9 @@
     font-size: 1.2em;
     white-space: pre-wrap;
 }
-.textoLink{
-    color: #4A90E2;
+.textoLink {
+    color: #E0E0E0;
+    text-shadow: 0 0 4px #ffffff; /* Corrección */
+    font-size: 1.3em;
     text-decoration: none;
 }
