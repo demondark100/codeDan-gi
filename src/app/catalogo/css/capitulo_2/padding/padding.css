@@ -1,0 +1,40 @@
+.css--paddingTop--ejemplo{ /*ejemplo de padding top*/
+    display: inline-block;
+    background-color: blue;
+    padding-top: 15px;
+    color: white;
+}
+.css--paddingright--ejemplo{ /*ejemplo de padding right*/
+    display: inline-block;
+    background-color: blue;
+    padding-right: 15px;
+    color: white;
+}
+
+.css--paddingbottom--ejemplo{ /*ejemplo de padding bottom*/
+    display: inline-block;
+    background-color: blue;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.css--paddingLeft--ejemplo{ /*ejemplo de padding left*/
+    display: inline-block;
+    background-color: blue;
+    padding-left: 15px;
+    color: white;
+}
+
+.css--paddingOneLine--ejemplo{ /*ejemplo de padding para una sola linea*/
+    display: inline-block;
+    background-color: blue;
+    padding: 15px 25px 10px 30px;
+    color: white;
+}
+
+.css--paddingAll--ejemplo{ /*ejemplo de padding*/
+    display: inline-block;
+    background-color: blue;
+    padding: 15px;
+    color: white;
+}

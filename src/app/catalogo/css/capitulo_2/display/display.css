@@ -1,0 +1,33 @@
+.css--displayContent--ejemplo1{ /*contenedor del ejemplo 1*/
+    height: 180px;
+}
+.css--displayContent--ejemplo__linea{ /*ejemplo en linea*/
+    border: 1px solid #000;
+}
+.css--displayContent--ejemplo__bloque{ /*ejemplo en bloque*/
+    display: block;
+    border: 1px solid #000;
+}
+
+
+
+.css--bLinea--ejemplo__text{ /*poner el texto que es en linea un background*/
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 150px;
+}
+.css--pLinea--ejemplo__text{ /*poner el texto que es en bloque un background*/
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 110px;
+}
+
+
+
+.css--displayLineBloque--ejemplo{ /*ejemplo de inline block*/
+    display: inline-block;
+    height: 100px;
+    background-color: lightblue;
+}

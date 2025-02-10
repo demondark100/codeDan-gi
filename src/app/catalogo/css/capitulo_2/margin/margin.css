@@ -1,0 +1,60 @@
+.css--marginTop--ejemplo { /*ejemplo de margin top*/
+    background-color: green;
+}
+.css--marginTop--ejemplo p{ /*texto del ejemplo de margin top*/
+    background-color: blue;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+}
+
+
+
+.css--marginRight--ejemplo{   /*ejemplo de margin right*/
+    background-color: green;
+    display: flex;
+    justify-content: end;
+}
+
+.css--marginRight--ejemplo p{ /*texto*/
+    background-color: blue;
+    display: inline-block;
+    margin-right: 15px;
+    color: white;
+}
+
+
+.css--marginBottom--ejemplo{ /*ejemplo de margen para abajo*/
+    background-color: green;
+}
+.css--marginBottom--ejemplo p{ /*texto*/
+    background-color: blue;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+
+.css--marginLeft--ejemplo{ /*margen de la izquierda*/
+    background-color: green;
+}
+.css--marginLeft--ejemplo p{ /*texto*/
+    background-color: blue;
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+}
+
+
+
+.css--marginAuto--ejemplo{ /*ejemplo de margin auto*/
+    /* width: 100%; */
+    background-color: green;
+}
+.css--marginAuto--ejemplo p{
+    margin: auto;
+    background-color: blue;
+    color: white;
+    width: 20%;
+}

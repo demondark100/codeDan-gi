@@ -52,7 +52,7 @@ function ConceptosBasicosHTML() {
             </Content>
             <Titulo level={2} text={`Inspeccionar`}/>
             <Texto texto={`Ahora, para ver de forma más detallada todas las propiedades que tiene una caja, puedes inspeccionar la página y luego en la parte de "Styles" bajamos hasta abajo y veremos todas las propiedades de una caja.`}/>
-            <Imagen src={propiedades} alt={"propiedades"} />
+            <Imagen src={propiedades.src} alt={"propiedades"} />
         </MainCap>
     );
 }

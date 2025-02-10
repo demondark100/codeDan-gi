@@ -7,12 +7,16 @@
 }
 .imagenContentImg{ /*contenedor de la imagen*/
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
+    outline: .2px solid #343232;
+    box-shadow: 0 0 8px 1px #343232;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .imagenContentImg__img{ /*imagen que se mostrara*/
     width: 100%;
@@ -96,16 +100,13 @@
     width: 100vw;
     height: 100vh;
     background-color: #121212;
-    z-index: 2;
+    z-index: 5;
     opacity: 0;
     visibility: hidden;
-    transition-duration: .3s;
-    transition: opacity 0.3s ease-in-out;
 }
 .imagenContentCompleteShow{ /*mostrar toda la pantalla completa la imagen*/
     opacity: 1;
     visibility: visible;
-    transition-duration: .3s;
 }
 /*fin de los estilos del contenedor de la imagen que se expande en toda la pantalla*/
 
@@ -123,13 +124,11 @@
     background: linear-gradient(0deg,#000,transparent,transparent,transparent,#000);
     opacity: 0;
     visibility: hidden;
-    transition-duration: .3s;
     user-select: none;
 }
 .imagenContentComplete__backgroundShow{ /*mostrar opciones*/
     opacity: 1;
     visibility: visible;
-    transition-duration: .3s;
 }
 /*fin de los estilos del background para opciones en imagen completa*/
 

@@ -9,11 +9,12 @@ import "./imagen.css";
 
 // iconos
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExpand } from '@fortawesome/free-solid-svg-icons';
+import { faCommentsDollar, faExpand } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Imagen = ({ src, alt, link = "" }) => {
+    console.log(src)
     // mostrar opciones de la imagen
     const [showHideExpand, setShowHideExpand] = useState(false);
 
@@ -34,9 +35,7 @@ const Imagen = ({ src, alt, link = "" }) => {
 
     function closeCompleteScreen() {
         setShowHideExpandComplete(false);
-        setTimeout(() => {
             setCompleteScreen(false);
-        }, 300); // Tiempo de la transición CSS
     }
 
     return (
@@ -67,7 +66,7 @@ const Imagen = ({ src, alt, link = "" }) => {
                 </div>
 
                 {/* imagen */}
-                <Image className='imagenContentImg__img' src={src} alt={alt} />
+                <img className='imagenContentImg__img' src={src} alt={alt} />
             </div>
 
             {/* imagen de fondo */}
@@ -89,7 +88,7 @@ const Imagen = ({ src, alt, link = "" }) => {
                     </button>
                 </div>
                 {/* imagen */}
-                <Image className='imagenContentImg__img' src={src} alt={alt} />
+                <img className='imagenContentImg__img' src={src} alt={alt} />
             </div>
         </div>
     );

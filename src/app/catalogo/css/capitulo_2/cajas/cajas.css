@@ -1,0 +1,21 @@
+.css--cajasBloque--ejemploContent{  /*contenedor de ejemplo de caja de bloque*/
+    width: 80%;
+    height: 150px;
+    border: 1px solid #000;
+    margin: 15px;
+}
+
+.css--cajasBloque--ejemploContent__text{  /*texto de bloque*/
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.css--cajasLinea--ejemploContent{ /*contenedor de ejemplo de caja en linea*/
+    width: 80%;
+    height: 150px;
+    border: 1px solid #000;
+    margin: 15px;
+}
+.css--cajasLinea--ejemploContent__text{ /*texto de ejemplo de caja en linea*/
+    border: 1px solid #000;
+}
