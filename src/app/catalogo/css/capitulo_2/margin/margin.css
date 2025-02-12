@@ -49,7 +49,7 @@
 
 
 .css--marginAuto--ejemplo{ /*ejemplo de margin auto*/
-    /* width: 100%; */
+    width: 100%;
     background-color: green;
 }
 .css--marginAuto--ejemplo p{

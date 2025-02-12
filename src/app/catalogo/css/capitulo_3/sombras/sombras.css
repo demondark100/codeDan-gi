@@ -1,0 +1,23 @@
+.css--sombrasCaja1Content--ejemplo{ /*contenedor del primer ejemplo*/
+    width: 100%;
+    height: 150px;
+}
+.css--sombrasCaja1--ejemplo{ /*ejemplo de box shadow*/
+    width: 150px;
+    background-color: black;
+    color: white;
+    box-shadow: -8px 8px 15px 8px cadetblue;
+    margin: auto;
+}
+
+.css--sombrasCaja2Content--ejemplo{ /*contenedor para el ejemplo 2 osea inset*/
+    width: 100%;
+    height: 150px;
+}
+.css--sombrasInset--ejemplo{ /*ejemplo de sombra interna inset*/
+    width: 55%;
+    background-color: black;
+    color: white;
+    box-shadow: inset -8px 8px 15px 8px cadetblue;
+    margin: auto;
+}

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import "./enlace.css";
 
-function Enlace({ link, texto }) {
+function Enlace({ link, texto , target = "" }) {
     return (  
         <div className="enlaceContent">
-            <Link href={link}>{texto}</Link>
+            <Link href={link} target={target}>{texto}</Link>
         </div>
     );
 }
