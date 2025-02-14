@@ -1,0 +1,8 @@
+.css--textShadow--ejemplo{ /*ejemplo de text shadow*/
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 55%;
+    margin: auto;
+    text-shadow: 5px 5px 15px white;
+}

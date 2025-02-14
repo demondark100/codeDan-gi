@@ -1,0 +1,45 @@
+.css--positionRelative1--ejemplo , .css--positionRelative2--ejemplo , .css--positionRelative3--ejemplo {
+    width: 25%;
+    height: 125px;
+    color: wheat;
+    margin: auto;
+  }
+  .css--positionRelative1--ejemplo{
+    background-color: red;
+    position: relative;
+  }
+  .css--positionRelative2--ejemplo{
+    background-color: blue;
+    position: relative;
+    top: 25px;
+  }
+  .css--positionRelative3--ejemplo{
+    background-color: green;
+    position: relative;
+  }
+
+
+
+.css-positionRelativeMovimientoTop--ejemplo{ /*ejemplo 2 de position relative*/
+    margin: auto;
+    background-color: lightblue;
+    color: black;
+    width: 25%;
+    height: 125px;
+    position: relative;
+    top: -10px;
+    left: -85px;
+}
+
+
+.css--positionRelative2--ejemplo{ /*ejemplo 3*/
+    background-color: red;
+    color: white;
+    width: 25%;
+    height: 150px;
+    position: relative;
+    bottom: 50px;
+    top: 15px;
+    left: 55px;
+    right: 200px;
+}

@@ -1,0 +1,39 @@
+.css--borderEnOutline--ejemplo{ /*ejemplo de border en outline*/
+    background-color: green;
+    border: 8px solid orangered;
+    margin: auto;
+    width: 35%;
+    height: 150px;
+    color: whitesmoke;
+}
+
+.css-outlineCaja--ejemplo{ /*primer ejemplo de outline */
+    background-color: blue;
+    margin: auto;
+    width: 35%;
+    height: 150px;
+    color: whitesmoke;
+}
+
+
+
+.css--outlineCaja--ejemplo{ /*ejemplo de outline*/
+    background-color: green;
+    outline: 10px solid orangered;
+    margin: auto;
+    width: 35%;
+    height: 150px;
+    color: whitesmoke;
+}
+.css--borderEjemplooutline--ejemplo{ /*ejemplo de la caja sin borde para outline*/
+    background-color: blue;
+    margin: auto;
+    width: 35%;
+    height: 150px;
+    color: whitesmoke;
+}
+
+
+.css--sinOutlineInput--ejemplo{ /*quitando outline a un input*/
+    outline: none;
+}
