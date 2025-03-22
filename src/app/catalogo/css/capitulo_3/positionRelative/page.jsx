@@ -13,6 +13,16 @@ import Enlace from "@/componentes/cursos/enlace/enlace"
 export default function PositionRelativeCss() {
     return(
         <MainCap>
+            <Resumen>
+                <Titulo text={`Position relative`}/>
+                <Texto texto={`Al posicionar una caja con "relative", esta conserva su espacio original en la página.`}/>
+                <Codigo lenguaje={"css"} codigo={`position: relative; /* Posicionar una caja en "relative" */
+/* Cambiar de lugar */
+top: 15px;  /* Posicionar una caja hacia abajo */
+right: 15px;  /* Posicionar una caja hacia la izquierda */
+bottom: 15px;  /* Posicionar una caja hacia arriba */
+left: 15px;  /* Posicionar una caja hacia la derecha */`}/>
+            </Resumen>
             <Titulo text={`position relative`}/>
             <Texto texto={`La propiedad position nos permite posicionar elementos de manera personalizada. Al aplicarla, el elemento adquiere nuevas propiedades como:
 
@@ -101,7 +111,7 @@ z-index: Controla la superposición de los elementos.`}/>
                 </div>
             </Web>
             <Texto texto={`Si te das cuenta, el elemento no responde a bottom ni a right, ya que top y left tienen mayor prioridad.`}/>
-            <Enlace link={"#"} texto={"pepa"}/>
+            <Enlace link={"/catalogo/css/capitulo_3/positionAbsolute"} texto={"position absolute"}/>
         </MainCap>
     )
 }

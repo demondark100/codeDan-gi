@@ -1,0 +1,17 @@
+.css--flexBasisEjemplo1--ejemplo{
+    display: flex;
+    background-color: #000;
+    width: 100%;
+}
+.css--flexBasisEjemplo1--ejemplo div{
+    background-color: #6f6666;
+    color: #fff;
+    border: #120e0e;
+    margin: 15px;
+    height: 350px;
+    width: 50px;
+}
+
+.css--flexBasisEjemplo1--ejemplo div:nth-child(1){
+    flex-basis: 150px;
+}

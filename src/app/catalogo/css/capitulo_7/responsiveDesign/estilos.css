@@ -1,0 +1,122 @@
+/* Reset */
+
+/* Estilos base (Mobile First) */
+.css--responsiveDesignContent--ejemplo {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del Header */
+.css--responsiveHeader--ejemplo {
+    background-color: #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.css--responsiveHeaderLogo--ejemplo {
+    color: #70ffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.css--responsiveHeaderNav--ejemplo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.css--responsiveHeaderNav--ejemplo ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.css--responsiveHeaderNav--ejemplo ul li a {
+    color: #c5ffc5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.css--responsiveHeaderNav--ejemplo ul li a:hover {
+    color: #468f46;
+}
+
+/* Estilos del Contenido */
+.css--responsiveDesignContentMain--ejemplo {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.css--responsiveMain--ejemplo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.css--responsiveMain--ejemplo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.css--responsiveAside--ejemplo {
+    background-color: #fffb06;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos del Footer */
+.css--responsiveFooter--ejemplo {
+    position: relative;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para Tablet (Mínimo 768px) */
+@media screen and (min-width: 768px) {
+    .css--responsiveHeader--ejemplo {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+    .css--responsiveHeaderNav--ejemplo ul {
+        display: flex;
+    }
+
+    .css--responsiveDesignContentMain--ejemplo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .css--responsiveMain--ejemplo {
+        width: 70%;
+    }
+
+    .css--responsiveAside--ejemplo {
+        width: 25%;
+        margin-top: 0;
+    }
+}
+
+/* Estilos para Escritorio (Mínimo 1024px) */
+@media screen and (min-width: 1024px) {
+    .css--responsiveDesignContentMain--ejemplo {
+        width: 80%;
+    }
+
+    .css--responsiveMain--ejemplo h1 {
+        font-size: 28px;
+    }
+
+    .css--responsiveAside--ejemplo {
+        background-color: #ff2424;
+        color: white;
+    }
+}

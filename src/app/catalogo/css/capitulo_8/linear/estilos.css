@@ -1,0 +1,5 @@
+.css--linearContent--ejemplo{
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(0deg , #00f , #f00);
+}

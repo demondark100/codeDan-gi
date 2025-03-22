@@ -1,0 +1,54 @@
+.css--pseudoclasesHover--ejemplo:hover{ /*ejemplo de hover*/
+    color: wheat;
+    background-color: black;
+}
+
+
+.css--pseudoclasesLink--ejemplo{
+    background-color: black;
+    color: wheat;
+}
+.css--pseudoclasesLink--ejemplo:link{ /*ejemplo de link*/
+    background-color: green;
+}
+
+
+
+.css--pseudoclasesActive--ejemplo{ /*ejemplo de active*/
+    background-color: black;
+    color: wheat;
+    display: block;
+    margin: auto;
+}
+
+.css--pseudoclasesActive--ejemplo:active{ /*ejemplo de active*/
+    background-color: orange;
+    color: black;
+}
+
+
+
+
+.css--pseudoclasesFocus--ejemplo:focus{ /*ejemplo de focus*/
+    background-color: black;
+    color: orange;
+}
+
+
+
+
+
+
+
+.css--pseudoclasesNthChild--ejemplo:nth-child(odd) {
+    background-color: lightblue; /* Elementos impares */
+}
+
+.css--pseudoclasesNthChild--ejemplo:nth-child(even) {
+    background-color: lightgreen; /* Elementos pares */
+}
+
+.css--pseudoclasesNthChild--ejemplo:nth-child(3) {
+    font-weight: bold;
+    color: red; /* Solo el tercer elemento */
+}

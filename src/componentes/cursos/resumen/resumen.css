@@ -1,87 +1,54 @@
-/*estilos del contenedor base de todo resumenes*/
-.contentResumen{ /*contenedor de los reumenes*/
-    top: 0;
-    right: 0;
+.contentResumen {
+    position: fixed;
     width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 8;
-    pointer-events: none;
-}
-/*fin de los estilos del contenedor base de todos los resumenes*/
-
-
-
-
-/*estilos del icono*/
-.contentResumen__iconContent{ /*contenedor del icono y el texto*/
-    position: fixed;
-    top: 0px;
+    height: 100vh;
     display: flex;
-    gap: 5px;
-    justify-content: end;
-    min-width: 98px;
     align-items: center;
-    width: 100%;
-    z-index: 2;
-}
-
-.contentResumen__iconContent--icono{ /*icono*/
-    padding: 8px;
-    pointer-events: auto;
-    cursor: pointer;
-    font-size: 1.2em;
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    color: #E0E0E0;
     background-color: transparent;
-    order: 2;
-}
-.contentResumen__iconContent--parrafo{ /*parrafo indicativo*/
-    background-color: #121212;
-    padding: 8px;
-    color: #E0E0E0 !important;
-    width: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    user-select: none;
-    order: 1;
-    border: .8px solid #2C2C2C;
+    z-index: 15;
 }
 
-
-@media (min-width: 850px){
-    .contentResumen__iconContent{ /*contenedor del icono y el texto*/
-        flex-direction: row;
-        justify-content: end;
-        width: calc(100% - 265px);
-        right: 0;
-    }
+/* Ventana flotante */
+.ventana-flotante {
+    position: fixed;
+    background: #000;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    /* cursor: grab; */
+    /* user-select: none; */
+    transition: transform 0.1s ease-out;
+    min-width: 200px;
+    min-height: 150px;
 }
-/*fin de los estilos del icono*/
 
-
-
-
-/*Estilos de la informacio*/
-.contentResumen__infoContent{ /*contenedor de la informacion*/
-    top: 50px;
-    background-color: #12121289;
-    backdrop-filter: blur(8px);
-    position: absolute;
+/* Barra de título */
+.barra-titulo {
     width: 100%;
-    height: calc(100% - 50px);
-    z-index: 0;
-    pointer-events: auto;
-    padding: 15px;
-    padding-bottom: 55px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenido con scroll dentro de la ventana */
+.contenido_content{
     overflow: auto;
+    height: 100%;
+    pointer-events: auto;
+}
+.contetnido {
+    flex-grow: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+    padding: 15px;
+    font-size: 14px;
+    overflow-x: hidden; /* Evita el scroll horizontal innecesario */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -89,11 +56,52 @@
 
 
 
-
-@media (min-width: 850px){
-    .contentResumen__infoContent{ /*contenedor de la informacion*/
-        width: calc(100% - 250px);
-        right: 0;
-    }
+/* Botón de cerrar */
+.boton-cerrar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
-/*fin de los estilos de la informacion*/
+
+.boton-cerrar:hover {
+    color: red;
+}
+
+/* Botón flotante */
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton-flotante:hover {
+    background: #0056b3;
+}
+
+/* Resizers */
+.resizer {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    cursor: pointer;
+}
+
+.right { right: 0; top: 50%; cursor: ew-resize; }
+.bottom { bottom: 0; left: 50%; cursor: ns-resize; }
+.bottom-right { bottom: 0; right: 0; cursor: nwse-resize; }
+.left { left: 0; top: 50%; cursor: ew-resize; }
+.top { top: 0; left: 50%; cursor: ns-resize; }
+.top-left { top: 0; left: 0; cursor: nwse-resize; }
+.top-right { top: 0; right: 0; cursor: nesw-resize; }
+.bottom-left { bottom: 0; left: 0; cursor: nesw-resize; }

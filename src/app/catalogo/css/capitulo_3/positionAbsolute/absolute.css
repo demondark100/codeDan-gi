@@ -1,0 +1,27 @@
+.css--Absoluteposition_1--ejemplo{
+    background-color: green;
+    width: 35%;
+    height: 120px;
+    position: relative;
+  }
+
+  .css--Absoluteposition_2--ejemplo{
+    background-color: orange;
+    width: 35%;
+    height: 120px;
+    position: relative;
+  }
+
+  .css--Absoluteposition_3--ejemplo{
+    background-color: yellow;
+    left: 25px;
+    width: 35%;
+    height: 120px;
+    position: absolute;
+  }
+  .css--Absoluteposition_4--ejemplo{
+    background-color: brown;
+    width: 35%;
+    height: 120px;
+    position: relative;
+  }

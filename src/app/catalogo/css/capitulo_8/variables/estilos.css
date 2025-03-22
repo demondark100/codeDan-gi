@@ -1,0 +1,26 @@
+/* esto es el :root siempre se debe crear asi para usar variales globales */
+
+.css--variablesGlobalesCss--ejemplo{
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+}
+.css--variablesGlobalesCssP1--ejemplo{
+    margin-top: 15px;
+    background-color: #000;
+    padding: 15px;
+}
+.css--variablesGlobalesCssP1--ejemplo p {
+    color: #f00;
+}
+
+
+
+
+/*variables locales*/
+.css--variablesLocales--ejemplo{
+    background-color: #000000ea;
+}
+.css--variablesLocales--ejemplo p{
+    color: #0f0;
+}

@@ -76,11 +76,21 @@
     border-right: .5px solid #2C2C2C;
     pointer-events: auto;
     overflow: auto;
+    scrollbar-gutter: stable;
 }
 .navCatalogoContentShow{ /*mostrar nav de para buscar y seleccionar curso*/
     transform: translate(0,0);
     transition-duration: .3s;
 }
+.navCatalogoContent::-webkit-scrollbar{ /*contenedor del nav*/
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(0deg,#1E1E1E,transparent,#1E1E1E);
+}
+.navCatalogoContent::-webkit-scrollbar-thumb{ /*contenedor del nav*/
+    background-color: #121212;
+}
+
 @media(min-width: 850px){
     .navCatalogoContent{ /*contenedor del nav*/
         transform: translate(0,0);

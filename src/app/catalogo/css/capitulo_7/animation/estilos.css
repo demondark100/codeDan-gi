@@ -1,0 +1,203 @@
+.css--animationDutation--ejemplo{
+    width: 100%;
+    height: 50%;
+    background-color: #9eb6ff;
+    padding: 20px;
+}
+.css--animationDutation--ejemplo div{
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    background-color: inherit;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: css--animationDurationCss--ejemplo;
+    animation-duration: 2s;
+}
+
+@keyframes css--animationDurationCss--ejemplo {
+    from{
+        left: 0;
+        background-color: #000;
+    }
+    to{
+        left: 100%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+/* timing function */
+.css--animationTimingFunction--ejemplo{
+    width: 100%;
+    height: 50%;
+    background-color: #9eb6ff;
+    padding: 20px;
+}
+.css--animationTimingFunction--ejemplo div{
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    background-color: inherit;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-name: css--animationTimingFunction--ejemplo;
+    animation-duration: 2s;
+}
+
+@keyframes css--animationTimingFunction--ejemplo {
+    from{
+        left: 0;
+        background-color: #000;
+    }
+    to{
+        left: 100%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+
+/* animation iteration count */
+.css--animationIterationCount--ejemplo{
+    width: 100%;
+    height: 50%;
+    background-color: #9eb6ff;
+}
+.css--animationIterationCount--ejemplo div{
+    top: 15px;
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    background-color: inherit;
+    position: relative;
+
+    animation-name: css--animationIteration--ejemploAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes css--animationIteration--ejemploAnimation {
+    from{
+        left: 0;
+        background-color: #000;
+    }
+    to{
+        left: 100%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+
+
+/* directionreverse */
+
+.css--animationDirectionReverse--ejemplo{
+    width: 100%;
+    height: 50%;
+    background-color: #9eb6ff;
+}
+.css--animationDirectionReverse--ejemplo div{
+    top: 15px;
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    background-color: inherit;
+    position: relative;
+
+    animation-name: css--animationDirectionReverse--ejemplo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes css--animationDirectionReverse--ejemplo {
+    from{
+        left: 0;
+        background-color: #000;
+    }
+    to{
+        left: 100%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+/* direction alternate */
+.css--animationDirectionAlternate--ejemplo{
+    width: 100%;
+    height: 50%;
+    background-color: #9eb6ff;
+}
+.css--animationDirectionAlternate--ejemplo div{
+    top: 15px;
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    background-color: inherit;
+    position: relative;
+
+    animation-name: css--animationDirectionAlternat--ejemplo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes css--animationDirectionAlternat--ejemplo {
+    from{
+        left: 0;
+        background-color: #000;
+    }
+    to{
+        left: 100%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+/* alternate reverse */
+.css--animationDirectionAlternateReverse--ejemplo{
+    width: 100%;
+    height: 50%;
+    background-color: #9eb6ff;
+}
+.css--animationDirectionAlternateReverse--ejemplo div{
+    top: 15px;
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    background-color: inherit;
+    position: relative;
+
+    animation-name: css--animatioDirectionAlternateReverse--ejemplo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes css--animatioDirectionAlternateReverse--ejemplo {
+    from{
+        left: 0;
+        background-color: #000;
+    }
+    to{
+        left: 100%;
+        background-color: #fff;
+    }
+}

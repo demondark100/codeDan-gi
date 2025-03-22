@@ -1,0 +1,36 @@
+.css--rgb-ejemplo1--ejemplo{
+    width: 150px;
+    height: 85px;
+    margin: 15px;
+    background-color: black;
+    color: rgb(150, 255, 12);
+}
+
+
+.css--egbaColor--ejemplo{ /*ejemplo de rgba*/
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(8, 55, 207);
+    background-color: rgba(252, 114, 72, 0.5);
+    margin: 4px;
+}
+
+
+
+.css--hexadecimalColor--ejemplo{ /*ejemplo de hexadecimal*/
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0837cf;
+    background-color: #0ed4ca;
+    margin: 15px;
+}
+
+
+
+.css--hexadecimalOpacoColor--ejemplo{ /*ejemplo de hexadecimal opaco*/
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0837cf;
+    background-color: #ff5b3e7e;
+    margin: 15px;
+}

@@ -125,6 +125,7 @@ p{
                 </b>
             </Web>
             <Texto texto={`Al usar display: inline-block;, el elemento mantendrá su comportamiento en línea, pero ahora podrá aceptar propiedades como width y height, cosa que normalmente los elementos en línea no pueden hacer.`}/>
+
         </MainCap>
     )
 }

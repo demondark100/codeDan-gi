@@ -1,0 +1,38 @@
+.css--pseudoelementoFirstLine--ejemplo::first-line{ /*first line*/
+    color: blue;
+    font-size: 1.5em;
+}
+
+
+.css--pseudoelementosFisrtLetter--ejemplo::first-letter{ /*ejemplo de firt letter*/
+    font-size: 1.5em;
+    color: blueviolet;
+}
+
+
+.css--pseudoelementosInput--ejemplo::placeholder{ /*ejemplo de placeholder*/
+    color: wheat;
+    background-color: black;
+}
+
+
+
+.css--pseudoelementosSelection--ejemplo::selection{ /*ejemplo de selection*/
+    background-color: black;
+    color: wheat;
+}
+
+
+
+
+
+.css--pseudoelementosAfterBefore--ejemplo::before{
+    content: "bienvenidos ";
+    background-color: green;
+    color: white;
+}
+.css--pseudoelementosAfterBefore--ejemplo::after{
+    content: " programacion";
+    background-color: blue;
+    color: white;
+}

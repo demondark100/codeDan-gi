@@ -1,0 +1,112 @@
+.css--transformTranslate1--ejemplo{
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px groove #5fcdee;
+
+
+    transform: translate(110px,80px);
+}
+.css--transformTranslate1--ejemplo b{
+    color: #fff;
+}
+
+.css--transformTranslate2--ejemplo{
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px groove #5fcdee;
+
+
+    transform: translate(-30px,-140px);
+}
+.css--transformTranslate2--ejemplo b{
+    color: #fff;
+}
+
+
+
+
+/* scale */
+.css--transformScale--ejemplo{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px groove #5fcdee;
+
+    transform: scale(2 , .4);
+}
+.css--transformScale--ejemplo b{
+    color: #fff;
+}
+
+
+
+
+
+/* skew */
+.css--transformSkew--ejemplo{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px groove #5fcdee;
+
+    transform: skew(45deg,15deg);
+}
+.css--transformSkew--ejemplo b{
+    color: #fff;
+}
+
+
+
+/*rotate*/
+.css--transformRotate--ejemplo{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px groove #5fcdee;
+
+    transform: rotate(90deg);
+}
+.css--transformRotate--ejemplo b{
+    color: #fff;
+}
+
+
+/* clip path */
+.css--transformClipPath--ejemplo{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px groove #5fcdee;
+
+
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+.css--transformClipPath--ejemplo p{
+    color: #fff;
+}

@@ -1,0 +1,60 @@
+.css--flexGrowContent1--ejemplo{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .css--flexGrowContent1Title--ejemplo{
+    color: #08eb1a;
+    text-shadow: 5px 5px 15px #08eb1a;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .css--flexGrowSinGrow--ejemplo{
+    display: flex;
+    height: 40vh;
+    border: 2px solid #08eb1a;
+    padding: 15px;
+  }
+  .css--flexGrowSinGrow--ejemplo div{
+    border: 2px solid #08eb1a;
+    color: #08eb1a;
+  }
+  .css--flexGrowConGrow--ejemplo{
+    display: flex;
+    height: 40vh;
+    border: 2px solid #08eb1a;
+    padding: 15px;
+  }
+  .css--flexGrowConGrow--ejemplo div{
+    border: 2px solid #08eb1a;
+    color: #08eb1a;
+    flex-grow: 2;
+  }
+
+
+.css--flexGrowContent2--ejemplo{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.css--flexGrowGrowEjemplo--ejemplo{
+    display: flex;
+    height: 40vh;
+    padding: 15px;
+    background-color: #000;
+  }
+  .css--flexGrowGrowEjemplo--ejemplo div{
+    color: #32a8a8;
+    border: 2px solid #32a8a8;
+  }
+  .css--flexGrowGrowEjemplo--ejemplo div:nth-child(1){
+    flex-grow: 1;
+  }
+  .css--flexGrowGrowEjemplo--ejemplo div:nth-child(3){
+    flex-grow: 2;
+  }

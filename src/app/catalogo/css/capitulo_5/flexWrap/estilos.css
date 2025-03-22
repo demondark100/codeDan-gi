@@ -1,0 +1,58 @@
+
+.css--flexWrapWrap--ejemplo{ /*ejemplo de wrap*/
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .css--flexWrapWrap--ejemplo div{
+    background-color: #3681e4;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+  }
+
+
+.css--flexWrapNoWrap--ejemplo{ /*contenedor de no wrap*/
+    display: flex;
+    flex-wrap: nowrap;
+}
+.css--flexWrapNoWrap--ejemplo{
+    background-color: #3681e4;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+}
+
+
+/*ejemplo de flex flow*/
+.css--flexFlowWrap--ejemplo{
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+  .css--flexFlowWrap--ejemplo div{
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+  }
+
+
+
+.css--flexWrapWrapReverse--ejemplo{ /*ejemplo de wrap reverse*/
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.css--flexWrapWrapReverse--ejemplo div{
+  background-color: #233cca;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+.css--flexWrapWrapReverse--ejemplo div:nth-child(1){
+  background-color: #ff2323;
+}
+.css--flexWrapWrapReverse--ejemplo div:nth-child(4){
+  background-color: #40ffa6;
+}

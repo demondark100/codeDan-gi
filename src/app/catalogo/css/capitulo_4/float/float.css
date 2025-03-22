@@ -1,0 +1,25 @@
+.css--floatEjemploNumero1--ejemplo{
+    background-color: yellow;
+    width: 50%;
+    float: left;
+  }
+  .css--floatEjemploNumero2--ejemplo{
+    background-color: red;
+    width: 50%;
+    float: right;
+  }
+
+
+.css--contentFloat--ejemplo2{ /*contenedor de ejemplo 2 de float*/
+    border: 2px solid gray;
+    width: 85%;
+    margin: auto;
+    padding: 8px;
+}
+
+.css--contentFloatImagen--ejemplo2{ /*imagen de float*/
+    width: 50%;
+    float: right;
+    margin-right: 5px;
+    margin-top: 8px;
+}

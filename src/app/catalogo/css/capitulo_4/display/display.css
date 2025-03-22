@@ -1,0 +1,29 @@
+.css--displayBlock--ejemplo{
+    display: block;
+    background-color: black;
+    color: wheat;
+}
+.css--displayInline--ejemplo{
+    display: inline;
+    background-color: black;
+    color: wheat;
+    margin-top: 15px;
+}
+.css--displayInlineBlock--ejemplo{
+    display: inline-block;
+    background-color: black;
+    color: wheat;
+    margin-top: 15px;
+}
+.css--displayFlex--ejemplo{
+    display: block;
+    background-color: black;
+    color: wheat;
+    margin-top: 15px;
+}
+.css--displayGrid--ejemplo{
+    display: block;
+    background-color: black;
+    color: wheat;
+    margin-top: 15px;
+}

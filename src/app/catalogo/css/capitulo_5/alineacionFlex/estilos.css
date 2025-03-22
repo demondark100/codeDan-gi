@@ -1,0 +1,193 @@
+.css--contentJustifyContent--ejemplo{ /*contenedor de justify content*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+.css--contentJustifyContent--ejemplo--title{ /*titulo*/
+    text-align: center;
+    font-size: 1.8em;
+    color: #32fff5;
+    text-shadow: -2px -2px 15px #32fff5;
+}
+
+
+.css--justifyContentCenter--ejemplo{ /*ejemplo de center*/
+    display: flex;
+    justify-content: center;
+}
+.css--justifyContentCenter--ejemplo div{ /*ejemplo de center*/
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #57ff09;
+}
+
+
+.css--justifyContentSpaceAround--ejemplo{ /*ejemplo de space around*/
+    display: flex;
+    justify-content: space-around;
+}
+.css--justifyContentSpaceAround--ejemplo div{ /*ejemplo de space around*/
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #57ff09;
+}
+
+
+.css--justifyContentSpaceBetween--ejemplo{ /*ejemplo de space between*/
+    display: flex;
+    justify-content: space-between;
+}
+.css--justifyContentSpaceBetween--ejemplo div{ /*ejemplo de space between*/
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #57ff09;
+}
+
+
+.css--justifyContentSpaceEvenly--ejemplo{ /*ejemplo de space evenly*/
+    display: flex;
+    justify-content: space-evenly;
+}
+.css--justifyContentSpaceEvenly--ejemplo div{ /*ejemplo de space evenly*/
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #57ff09;
+}
+
+
+
+/*ejemplo de align items*/
+.css--alignItemsContainer--ejemplo{ /*contenedor body*/
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.css--alignItemsContentItems--ejemplo{ /*contenedor de align items*/
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.css--alignItemsStart--ejemplo{ /*ejemplo de align items start*/
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+.css--alignItemsStart--ejemplo div{
+  border: 2px solid #0df795;
+  color: #0df795;
+  font-size: 1.5em;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+
+.css--alignItemsCenter--ejemplo{ /*ejemplo de center*/
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.css--alignItemsCenter--ejemplo div{
+  border: 2px solid #0df795;
+  color: #0df795;
+  font-size: 1.5em;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+.css--alignItemsEnd--ejemplo{ /*ejemplo de end*/
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+.css--alignItemsEnd--ejemplo div{
+    border: 2px solid #0df795;
+    color: #0df795;
+    font-size: 1.5em;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.css--flexStartStretchContent--ejemplo{ /*contenedor*/
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/*ejemplo de stretch*/
+.css--alineacionStretch--ejemplo{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.css--alineacionStretch--ejemplo div{
+    border: 2px solid #03cdff;
+    color: #03cdff;
+    margin: 15px;
+}
+
+/*ejemplod e flex start*/
+.css--alineacionFlexStart--ejemplo{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.css--alineacionFlexStart--ejemplo div{
+    border: 2px solid #03cdff;
+    color: #03cdff;
+    margin: 15px;
+}
+
+
+
+
+.css--alignContentContainer--ejemplo{ /*contenedor de align content*/
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.css--alineacionAlignContent1--ejemplo{ /*ejemplo 1 de align content*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid #03cdff;
+    flex-wrap: wrap;
+}
+.css--alineacionAlignContent1--ejemplo div{ /*ejemplo 1 de align content*/
+    border: 2px solid #03cdff;
+    color: #03cdff;
+    margin: 15px;
+}
+
+.css--alineacionAlignContent2--ejemplo{ /*ejemplo de align content 2*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    border: 2px solid #03cdff;
+    flex-wrap: wrap;
+}
+.css--alineacionAlignContent2--ejemplo div{ /*ejemplo de align content 2*/
+    border: 2px solid #03cdff;
+    color: #03cdff;
+    margin: 15px;
+}

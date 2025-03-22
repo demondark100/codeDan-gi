@@ -45,6 +45,9 @@ function Codigo({lenguaje,codigo}) {
             onMouseOver={() => setShowBtns(true)}
             onMouseOut={() => setShowBtns(false)}
         >
+            <div className='codigoContent--title'>
+                <h3>{lenguaje}</h3>
+            </div>
             {/* boton para copiar codigo */}
             {
                 showBtns &&

@@ -1,0 +1,58 @@
+.css--ejemploFlexContainer--ejemplo{ /*ejemplo de contenedor*/
+    background-color: #0672a3;
+    width: 50vw;
+    height: 25vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 125px;
+}
+.css--ejemploFlexContenido--ejemplo{ /*ejemplo de contenido*/
+    width: 75%;
+    height: 55%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    min-height: 80px;
+}
+
+
+
+.css--ejemplo1Flexbox--ejemplo{ /*ejemplo de flexbox 1*/
+    display: flex;
+    background-color: #2f87a1;
+    color: #e7e4ff;
+}
+
+
+/*diferencia entre block y flex*/
+.css--flexboxEjemploBlock--ejemplo{
+    display: block;
+}
+.css--flexboxEjemploFlex--ejemplo{
+    display: flex;
+}
+/*fin de diferencia entre block y flex*/
+
+
+/*ejemplo display flex*/
+.css--flexboxDisplayFlex--ejemplo{ /*contenedor*/
+    display: flex;
+    padding: 10px;
+}
+.css--flexboxDisplayFlex--ejemplo--parrafo1{ /*parrafo 1*/
+    background-color: #c5bee6;
+    padding: 12px;
+    margin: 8px;
+}
+.css--flexboxDisplayFlex--ejemplo--parrafo2{ /*parrafo 2*/
+    background-color: #34b66a;
+    padding: 12px;
+    margin: 8px;
+}
+/*fin de ejemplo display flex*/

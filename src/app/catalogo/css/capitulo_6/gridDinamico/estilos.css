@@ -1,0 +1,71 @@
+/*ejemplo de min content*/
+
+.css--gridDinamicoMinContent--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #60615f;
+}
+.css--gridDinamicoMinContent--ejemplo div {
+    border: 2px solid #000;
+    background-color: #00000066;
+    color: #fff;
+}
+
+
+/* max content */
+.css--gridDinamicoMaxContent--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(3, 120px);
+    background-color: #60615f;
+}
+.css--gridDinamicoMaxContent--ejemplo div {
+    border: 2px solid #000;
+    background-color: #00000066;
+    color: #fff;
+}
+
+
+
+/* minmax */
+.css--gridDinamicoMinMx--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 200px));
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #60615f;
+}
+.css--gridDinamicoMinMx--ejemplo div {
+    border: 2px solid #000;
+    background-color: #00000066;
+    color: #fff;
+}
+
+
+
+/* auto fill */
+.css--gridDinamicoAutoFill--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #60615f;
+}
+.css--gridDinamicoAutoFill--ejemplo div {
+    border: 2px solid #000;
+    background-color: #00000066;
+    color: #fff;
+}
+
+
+/*auto fit*/
+.css--gridDinamicoAutoFit--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #60615f;
+}
+.css--gridDinamicoAutoFit--ejemplo div {
+    border: 2px solid #000;
+    background-color: #00000066;
+    color: #fff;
+}

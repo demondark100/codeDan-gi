@@ -14,7 +14,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Imagen = ({ src, alt, link = "" }) => {
-    console.log(src)
     // mostrar opciones de la imagen
     const [showHideExpand, setShowHideExpand] = useState(false);
 

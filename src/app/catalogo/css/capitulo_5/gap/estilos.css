@@ -1,0 +1,27 @@
+.css--felxGapMargen--ejemplo{
+    display: flex;
+    background-color: #0a0b0a;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+.css--felxGapMargen--ejemplo div{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: #4a504a;
+}
+
+
+
+.css--felxGap--ejemplo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+    background-color: #000;
+    gap: 15px; 
+}
+.css--felxGap--ejemplo div{
+    width: 150px;
+    height: 150px;
+    background-color: #4a4444;
+}

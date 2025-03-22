@@ -1,0 +1,39 @@
+.css--cursorPointer1--ejemplo{ /*ejempo de cursor pointer*/
+    background-color: gray;
+    cursor: pointer;
+}
+
+
+
+
+.css--cursor-default--ejemplo {
+    cursor: default; /* Cursor por defecto */
+}
+
+.css--cursor-pointer--ejemplo {
+    cursor: pointer; /* Manito */
+}
+
+.css--cursor-crosshair--ejemplo {
+    cursor: crosshair; /* Cruz */
+}
+
+.css--cursor-move--ejemplo {
+    cursor: move; /* Flechas de movimiento */
+}
+
+.css--cursor-text--ejemplo {
+    cursor: text; /* Cursor de texto (I) */
+}
+
+.css--cursor-wait--ejemplo {
+    cursor: wait; /* Reloj de espera */
+}
+
+.css--cursor-help--ejemplo {
+    cursor: help; /* Signo de interrogación */
+}
+
+.css--cursor-not-allowed--ejemplo {
+    cursor: not-allowed; /* Prohibido */
+}

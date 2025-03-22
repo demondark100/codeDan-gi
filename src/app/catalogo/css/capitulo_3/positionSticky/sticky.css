@@ -1,0 +1,21 @@
+.css--positionStickyImagenDeMuestra{ /*imagen de position sticky*/
+    position: sticky;
+    top: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.css--positionStickyImagenDeMuestra img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.css--positionStickyEjemploWeb--ejemplo{
+    background-color: blue;
+    color: wheat;
+    width: 100%;
+    position: sticky;
+    top: 5px;
+}

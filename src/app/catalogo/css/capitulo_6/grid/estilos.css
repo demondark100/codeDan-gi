@@ -1,0 +1,6 @@
+.css--gridContainerEjemplo1--ejemplo{
+    display: grid;
+}
+.css--gridContainerEjemplo1--ejemplo div{
+    border: 2px solid #000;
+}

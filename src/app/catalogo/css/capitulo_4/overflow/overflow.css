@@ -1,0 +1,61 @@
+.css--explicacionOverflowTexto--ejemplo{ /*contenedor de desborde*/
+    width: 250px;
+    height: 100px;
+    color: #fff;
+    overflow: auto;
+    font-size: 1.2em;
+}
+
+
+.css--contenedorOverflow1--ejemplo{ /*contenedor de overlow*/
+    background-color: gray;
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+
+.css--contentOverflowHidden--ejemplo{ /*ejemplo de overflow hidden*/
+    margin: auto;
+    width: 200px;
+    background-color: gray;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+.css--overflowScroll--ejemplo{ /*scroll*/
+    margin: auto;
+    width: 150px;
+    background-color: gray;
+    height: 150px;
+    overflow: scroll;
+}
+
+
+.css--overflowAuto--ejemplo{ /*ejemplo de overflow auto*/
+    margin: auto;
+    width: 150px;
+    background-color: gray;
+    height: 150px;
+    overflow: auto;
+}
+
+
+
+.css--overflowX--ejemplo{ /*ejemplo de overflow x*/
+    margin: auto;
+    width: 150px;
+    background-color: gray;
+    height: 150px;
+    overflow-x: scroll;
+}
+
+.css--overflowY--ejemplo{ /*ejemplo de overflow y*/
+    margin: auto;
+    width: 150px;
+    background-color: gray;
+    height: 150px;
+    overflow-y: scroll;
+}

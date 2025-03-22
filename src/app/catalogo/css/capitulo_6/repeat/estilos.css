@@ -1,0 +1,21 @@
+.css--repeaContent1--ejemplo{
+    border: 5px solid #87d10f;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.css--repeaContent1--ejemplo div{
+    border: 2px solid #000;
+}
+
+
+
+.css--repeaContent2--ejemplo{
+    border: 5px solid #87d10f;
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(3,85px);
+}
+.css--repeaContent2--ejemplo div{
+    border: 2px solid #000;
+}

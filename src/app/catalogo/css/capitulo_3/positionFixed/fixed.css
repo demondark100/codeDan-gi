@@ -1,0 +1,19 @@
+.css--positionFixedMenuContent--ejemplo{
+    position: relative;
+    overflow: auto;
+    height: 100%;
+}
+.css--positionFixedMenu--ejemplo{
+    background-color: red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    color: white;
+}
+
+.css--positionFixedPagina--ejemplo{
+    overflow: auto;
+    height: 100%;
+}

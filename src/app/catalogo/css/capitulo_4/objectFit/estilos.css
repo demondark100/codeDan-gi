@@ -1,0 +1,57 @@
+.css--containObjectFit--ejemplo{ /*ejemplo de contain*/
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    border: 2px solid blue;
+    display: flex;
+}
+
+.css--containObjectFit--ejemplo img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.css--coverObjectFit--ejemplo{ /*ejemplo de cover*/
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    border: 2px solid blue;
+    display: flex;
+}
+.css--coverObjectFit--ejemplo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.css--noneObjectFit--ejemplo{ /*ejemplo de none*/
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    border: 2px solid blue;
+    display: flex;
+}
+
+.css--noneObjectFit--ejemplo img{
+    width: 100%;
+    object-fit: none;
+}
+
+
+
+.css--ovjectPosition--ejemplo{ /*ejemplo de object position*/
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    border: 2px solid blue;
+    display: flex;
+}
+
+.css--ovjectPosition--ejemplo img{
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}

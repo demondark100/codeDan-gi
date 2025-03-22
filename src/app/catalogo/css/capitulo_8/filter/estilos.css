@@ -1,0 +1,93 @@
+/*blur*/
+.css--filterBlur--ejemplo img{
+    width: 40%;
+    filter: blur(5px);
+}
+
+
+
+/*brightness*/
+.css--filterBrightness1--ejemplo img{
+    width: 40%;
+    filter: brightness(2);
+}
+.css--filterBrightness2--ejemplo img{
+    display: block;
+    margin-top: 8px;
+    width: 40%;
+    filter: brightness(.7);
+}
+
+
+
+/* contrast */
+.css--filterContrast1--ejemplo img{
+    width: 40%;
+    filter: contrast(2);
+}
+.css--filterContrast2--ejemplo img{
+    display: block;
+    margin-top: 5px;
+    width: 40%;
+    filter: contrast(.5);
+}
+
+
+
+/* grayscale */
+.css--filterGrayScale1--ejemplo img{
+    width: 40%;
+    filter: grayscale(.4);
+}
+.css--filterGrayScale2--ejemplo img{
+    display: block;
+    margin-top: 5px;
+    width: 40%;
+    filter: grayscale(2);
+}
+
+
+
+
+/* invert */
+.css--filterInvert1--ejemplo img{
+    width: 40%;
+    filter: invert(15%);
+}
+.css--filterInvert2--ejemplo img{
+    display: block;
+    margin-top: 5px;
+    width: 40%;
+    filter: invert(100%);
+}
+
+
+
+
+/* saturate */
+.css--filterStaturate1--ejemplo img{
+    width: 40%;
+    filter: saturate(0);
+}
+.css--filterStaturate2--ejemplo img{
+    display: block;
+    margin-top: 5px;
+    width: 40%;
+    filter: saturate(1);
+}
+.css--filterStaturate3--ejemplo img{
+    display: block;
+    margin-top: 5px;
+    width: 40%;
+    filter: saturate(2);
+}
+
+
+
+
+
+/*drop shadow*/
+.css--filterDropShadow--ejemplo img{
+    width: 40%;
+    filter: drop-shadow(2px 5px 15px #000);
+}

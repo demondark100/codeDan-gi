@@ -1,0 +1,23 @@
+.css--gridImplicito1--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 5px solid #2f87a1;
+}
+
+.css--gridImplicito1--ejemplo div {
+    border: 2px solid #000;
+}
+
+
+
+.css--gridImplicito2--ejemplo {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    border: 5px solid #2f87a1;
+}
+
+.css--gridImplicito2--ejemplo div {
+    border: 2px solid #000;
+}
