@@ -1,3 +1,20 @@
+:root{
+    --mainBackground: #121212;
+    --subMenuBackground: #1E1E1E;
+    --buttonBackground: #3A3A3A;
+    --hoverBackground: #505050;
+    --borders: #2C2C2C;
+    --mainText: #E0E0E0;
+    --mainTextHover: #ffffff;
+    --secondText: #A0A0A0;
+    --links: #4A90E2;
+    --alertCorrect: #43A047;
+    --alertErr: #E53935;
+    --scrollBackground: #322f2f;
+    --scrollChildBackground: #1b1919;
+    --backgroundTransparent: #121212a9;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;

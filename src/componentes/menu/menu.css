@@ -1,5 +1,5 @@
 .menuContent{ /*contenedor del menu*/
-    background-color: #121212;
+    background-color: var(--mainBackground);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -7,7 +7,7 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    border-bottom: #2C2C2C .5px solid;
+    border-bottom: var(--borders) .5px solid;
 }
 
 
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #E0E0E0;
+    color: var(--mainText);
 }
 
 
@@ -41,7 +41,7 @@
     left: 0;
     height: 100vh;
     width: 60%;
-    background-color: #121212;
+    background-color: var(--mainBackground);
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -50,16 +50,17 @@
     transform: translate(-100%,0);
     user-select: none;
     overflow: auto;
+    border-right: 1px solid var(--borders);
 }
 .menuContent__navShow{
     transition-duration: .3s;
     transform: translate(0,0);
 }
 .menuContent__nav::-webkit-scrollbar{ /*contenedor del scroll*/
-    background: linear-gradient(0deg,#1E1E1E,transparent,#1E1E1E);
+    background: var(--scrollBackground);
 }
 .menuContent__nav::-webkit-scrollbar-thumb{
-    background-color: #121212;
+    background-color: var(--scrollChildBackground);
 }
 
 .menuContent__nav--ul{ /*contenedor de los links*/
@@ -72,14 +73,14 @@
 .menuContent__nav--ul a{ /*links*/
     display: block;
     text-decoration: none;
-    color: #E0E0E0;
+    color: var(--mainText);
     font-size: 1.2em;
     width: 100%;
     padding: 8px;
 }
 .menuContent__nav--ul a:hover{
-    background-color: #505050;
-    color: #fff;
+    background-color: var(--hoverBackground);
+    color: var(--mainTextHover);
 }
 
 
@@ -89,7 +90,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #00000062;
+    background-color: var(--backgroundTransparent);
     opacity: 0;
     visibility: hidden;
     transition-duration: .3s;
@@ -105,7 +106,7 @@
 .menuContent__nav--close{ /*boton para cerrar*/
     position: absolute;
     width: 100%;
-    color: #E0E0E0;
+    color: var(--mainText);
     left: 0;
     top: 8px;
     display: flex;
@@ -118,7 +119,7 @@
 .menuContent__nav--close button{
     background-color: transparent;
     border: none;
-    color: #E0E0E0;
+    color: var(--mainText);
     font-size: 1em;
     display: flex;
     align-items: center;
@@ -131,7 +132,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: #1E1E1E;
+    background-color: var(--mainBackground);
     padding: 8px;
     position: relative;
 }
@@ -143,7 +144,7 @@
 }
 .menuContent__nav--user button{ /*boton de opciones*/
     background-color: transparent;
-    color: #E0E0E0;
+    color: var(--mainText);
     font-size: 1.3em;
     border: none;
 }
@@ -164,17 +165,17 @@
 .menuContent__nav--data a{ /*links de los datos*/
     text-decoration: none;
     font-size: 1em;
-    color: #E0E0E0;
+    color: var(--mainText);
     padding: 15px;
     padding-left: 8px;
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #1E1E1E;
+    background-color: var(--subMenuBackground);
 }
 .menuContent__nav--data a:hover{
-    background-color: #505050;
+    background-color: var(--hoverBackground);
 }
 
 
@@ -211,7 +212,7 @@
     }
     .menuContent__nav--ul a:hover{ /*links*/
         background-color: transparent;
-        color: #E0E0E0;
+        color: var(--mainText);
     }
     .menuContent__oscurecer{ /*oscurecer*/
         opacity: 0;
@@ -229,10 +230,11 @@
         gap: 18px;
         background-color: transparent;
         align-items: center;
+        order: 2;
     }
     .menuContent__nav--user button{ /*boton de opciones*/
         cursor: pointer;
-        color: #E0E0E0;
+        color: var(--mainText);
     }
     .menuContent__nav--user img{ /*imagen de usuario*/
         width: 25px;
@@ -240,15 +242,16 @@
     }
     .menuContent__nav--data{ /*contenedor de registro e inicio de sesion*/
         width: auto;
+        order: 3;
     }
     .menuContent__nav--data a{ /*links de los datos*/
         font-size: 1em;
         padding: 8px;
         width: 114px;
-        background-color: #1E1E1E;
+        background-color: var(--subMenuBackground);
     }
     .menuContent__nav--data a:hover{
-        background-color: #505050;
-        color: #fff;
+        background-color: var(--hoverBackground);
+        color: var(--mainTextHover);
     }
 }

@@ -43,7 +43,6 @@ function CatalogoNav() {
                         tema.words.forEach(i=>{
                             if (i.toLowerCase().includes(valor.toLowerCase())) {
                                 newSuggestions.push({ ...tema, logo: ruta.logo });
-                                console.log(i)
                             }
                         })
                         // if (tema.title.toLowerCase().includes(valor.toLowerCase())) {
@@ -170,7 +169,7 @@ function CatalogoNav() {
             </nav>
 
             {/* botón para abrir el menú */}
-            <div className="catalogoContentBtnOpenCaps">
+            {/* <div className="catalogoContentBtnOpenCaps">
                 <button 
                     className={`catalogoContent--btnOpen ${showHideNav ? "catalogoContent--btnOpenRotate" : ""}`}
                     onClick={toggleNav}
@@ -184,7 +183,7 @@ function CatalogoNav() {
                         Catálogo
                     </p>
                 )}
-            </div>
+            </div> */}
         </div>
     );
 }

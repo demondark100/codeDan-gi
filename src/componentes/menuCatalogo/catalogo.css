@@ -1,14 +1,12 @@
 /*estilos del contenedor principal del catalogo*/
 .catalogoContent{
     width: 100%;
-    height: calc(100vh - 50px);
-    position: fixed;
-    top: 50px;
+    /* height: calc(100vh - 50px); */
+    position: relative;
     left: 0;
     display: flex;
     align-items: start;
     pointer-events: none;
-    z-index: 4;
 }
 /*fin de los estilos del catalogo principal del catalogo*/
 
@@ -16,11 +14,16 @@
 .catalogoContentBtnOpenCaps{ /*contenedor del boton y el parrafo*/
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
 }
 .catalogoContent--btnOpen{ /*boton*/
+    position: absolute;
+    top: 15px;
+    left: 15px;
     border: none;
     background-color: transparent;
     /* border: .8px solid #2C2C2C; */
@@ -28,8 +31,6 @@
     font-size: 1.4em;
     border-radius: 100px;
     outline: none;
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,10 +46,13 @@
 }
 
 .catalogoContentBtnOpenCaps--parrafo{ /*parrafo indicativo*/
+    position: absolute;
+    top: 7.5px;
+    left: 40px;
     background-color: #121212;
-    border: .8px solid #2C2C2C;
+    border: .8px solid var(--borders);
     padding: 8px;
-    color: #E0E0E0;
+    color: var(--mainText);
     width: 100px;
     display: flex;
     justify-content: center;
@@ -67,13 +71,11 @@
 
 /*contenedor del nav para los capitulos*/
 .navCatalogoContent{ /*contenedor del nav*/
-    background-color: #121212;
+    background-color: var(color);
     width: 60vw;
     height: 100%;
-    transform: translate(-60vw,0);
     transition-duration: .3s;
-    position: absolute;
-    border-right: .5px solid #2C2C2C;
+    position: relative;
     pointer-events: auto;
     overflow: auto;
     scrollbar-gutter: stable;
@@ -85,17 +87,22 @@
 .navCatalogoContent::-webkit-scrollbar{ /*contenedor del nav*/
     width: 10px;
     height: 10px;
-    background: linear-gradient(0deg,#1E1E1E,transparent,#1E1E1E);
+    background: var(--scrollBackground);
 }
 .navCatalogoContent::-webkit-scrollbar-thumb{ /*contenedor del nav*/
-    background-color: #121212;
+    background-color: var(--scrollChildBackground);
 }
 
 @media(min-width: 850px){
     .navCatalogoContent{ /*contenedor del nav*/
+        position: fixed;
+        left: 0;
+        top: 50px;
+        height: calc(100vh - 50px);
         transform: translate(0,0);
         width: 250px;
         transition-duration: .6s !important;
+        border-right: var(--borders) 1px solid;
     }
 }
 /*fin de los estilos del nav para los capitulos*/

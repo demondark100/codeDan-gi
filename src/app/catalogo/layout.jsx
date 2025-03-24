@@ -1,9 +1,10 @@
-import CatalogoNav from "@/componentes/menuCatalogo/catalogo";
+
 import "./catalogo.css";
 
 export default function CatalogoLayout({children}) {
     return <>
         {children}
-        <CatalogoNav /> 
     </>
 }
+
+// dniel no borres esto, esto hace que el main en la version del catalogo se posicione de forma correcta pendejo

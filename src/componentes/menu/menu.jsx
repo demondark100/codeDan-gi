@@ -4,7 +4,7 @@ import "./menu.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-
+import { usePathname } from "next/navigation";
 // iconos
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars,faXmark,faEllipsisH } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,7 @@ import logo from "../../../public/logo.jpg";
 
 // imagenes
 import userLogo from "../../../public/user.png";
+import CatalogoNav from "../menuCatalogo/catalogo";
 
 
 
@@ -33,6 +34,9 @@ function Menu() {
         setShowProfile(!showProfile);
     }
 
+    // mostrar o no los apuntes
+    const router = usePathname();
+
     return (
         <nav className="menuContent">
             <button onClick={()=>showHideMenu("s")} className="menuContent__icon">
@@ -42,6 +46,8 @@ function Menu() {
                 <Image src={logo} alt="logo" />
             </div>
 
+            
+
             {/* oscurecer y funcion para quitar menu */}
             <div 
                 onClick={()=>showHideMenu("h")} 
@@ -49,26 +55,13 @@ function Menu() {
             ></div>
 
             <div className={`menuContent__nav ${!showMenu ? "":"menuContent__navShow"}`}>
+                {/* contenedor de la imagen */}
+
                 <div className="menuContent__nav--close">
                     <Image src={logo} alt="logo" />
-                    <button onClick={()=>showHideMenu("h")}>
-                    <FontAwesomeIcon icon={faXmark} size="2x"/>
-                </button>
+                    <button onClick={()=>showHideMenu("h")}><FontAwesomeIcon icon={faXmark} size="2x"/></button>
                 </div>
-                <ul className="menuContent__nav--ul">
-                    <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/"}>Inicio</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/catalogo"}>Catalogo</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/productos"}>Productos</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>showHideMenu("h")} href={"/about"}>Sobre mi</Link>
-                    </li>
-                </ul>
+
                 <div className="menuContent__nav--user">
                     <Image src={userLogo} alt="usuario"/>
                     <button onClick={()=>showHideProfile()}>
@@ -84,6 +77,23 @@ function Menu() {
                         <Link href={"/user/login"}>Iniciar secion</Link>
                     </div>
                 </div>
+
+                <ul className="menuContent__nav--ul">
+                    <li>
+                        <Link onClick={()=>showHideMenu("h")} href={"/"}>Inicio</Link>
+                    </li>
+                    <li>
+                        <Link onClick={()=>showHideMenu("h")} href={"/catalogo"}>Catalogo</Link>
+                    </li>
+                    <li>
+                        <Link onClick={()=>showHideMenu("h")} href={"/productos"}>Productos</Link>
+                    </li>
+                    <li>
+                        <Link onClick={()=>showHideMenu("h")} href={"/about"}>Sobre mi</Link>
+                    </li>
+                </ul>
+
+                {router.startsWith("/catalogo") && <CatalogoNav />}
 
             </div>
 
