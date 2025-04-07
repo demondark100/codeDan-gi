@@ -1,0 +1,101 @@
+.console-container {
+    width: 100%;
+    /* max-width: 600px; */
+    max-height: 250px;
+    background: black;
+    color: limegreen;
+    font-family: monospace;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .console-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #222;
+    border-bottom: 1px solid #444;
+  }
+  
+  .console-header span {
+    font-weight: bold;
+  }
+  
+  .console-header button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .console-header button:disabled {
+    background: #666;
+    cursor: not-allowed;
+  }
+  
+  .console-output {
+    padding: 16px;
+    min-height: 250px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .console-line {
+    margin-bottom: 4px;
+  }
+  
+  .console-result {
+    margin-top: 10px;
+    color: cyan;
+    font-weight: bold;
+  }
+
+  .console-output {
+    padding: 16px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .console-output {
+    padding: 16px;
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .console-output::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: var(--scrollBackground);
+  }
+  .console-output::-webkit-scrollbar-thumb{
+    background-color: var(--scrollChildBackground);
+  }
+  
+  .console-placeholder {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .console-result {
+    margin-top: 10px;
+    color: cyan;
+    font-weight: bold;
+    white-space: pre-wrap; /* Permite que los objetos grandes no se desborden */
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  

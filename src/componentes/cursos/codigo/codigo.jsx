@@ -15,7 +15,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import "./codigo.css";
 
 
-function Codigo({lenguaje,codigo}) {
+function Codigo({lenguaje,codigo,isSyntax=false}) {
     // variable que cambia para mostrar o ocultar boton de copiar.
     const [showBtns, setShowBtns] = useState(false);
 
@@ -46,7 +46,7 @@ function Codigo({lenguaje,codigo}) {
             onMouseOut={() => setShowBtns(false)}
         >
             <div className='codigoContent--title'>
-                <h3>{lenguaje}</h3>
+                <h3>{isSyntax?"Sintaxis de":""} {lenguaje}</h3>
             </div>
             {/* boton para copiar codigo */}
             {
